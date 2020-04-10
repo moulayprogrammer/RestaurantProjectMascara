@@ -8,7 +8,7 @@ import java.sql.*;
 import java.util.Collections;
 import java.util.List;
 
-public class UseBdd extends BDD {
+public class UserBdd extends BDD {
     @Override
     public boolean insert(Object o) {
         return false;
@@ -49,7 +49,7 @@ public class UseBdd extends BDD {
     @Override
     public ArrayList<User> getAll() {
         ArrayList<User> list=new ArrayList<User>();
-        String sql="SELECT*FROM User";
+        String sql="select * from Users";
 
 
         try {
