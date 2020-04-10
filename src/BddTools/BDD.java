@@ -4,6 +4,7 @@ import javafx.scene.control.Alert;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 
 abstract class BDD {
 
@@ -13,9 +14,9 @@ abstract class BDD {
         connect();
     }
 
-    private void connect(){
+    public Connection connect(){
         // db parameters
-        String url = "jdbc:sqlite:/home/moulay/IdeaProjects/BD/testRes.db";
+        String url = "jdbc:sqlite:testRes.db";
 
         try {
             // create a connection to the database
@@ -28,6 +29,7 @@ abstract class BDD {
             alert.setContentText("Connection is field !!");
             alert.show();
         }
+        return conn;
     }
 
     void close(){
@@ -46,30 +48,13 @@ abstract class BDD {
 
     abstract public boolean delete(Object o);
 
-    abstract public boolean isExist(Object o);
+    abstract public  boolean isExist(Object o);
 
-    abstract public ArrayList<Object> getAll();
+    abstract public<T> ArrayList<T> getAll();
 
-
-    void insert(String nom, String prenom) {
+     void insert(String nom, String prenom) {
 
     }
 
-    public void selectAll(){
-        String sql = "SELECT * FROM Category";
 
-        try {
-            Statement stmt  = conn.createStatement();
-            ResultSet rs    = stmt.executeQuery(sql);
-
-            // loop through the result set
-            while (rs.next()) {
-                System.out.println(rs.getInt("id") +  "\t" +
-                        rs.getString("nom et prenom") + "\t" +
-                        rs.getString("spec"));
-            }
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-    }
 }

@@ -1,22 +1,10 @@
 package BddTools;
 
-import Moduls.Category;
-
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.List;
 
-public class CategoryBdd extends BDD{
-
-
-
+public class ProduitBdd extends BDD {
     @Override
     public boolean insert(Object o) {
-
-
         return false;
     }
 
@@ -36,7 +24,7 @@ public class CategoryBdd extends BDD{
     }
 
     @Override
-    public ArrayList<Object> getAll(){
+    public ArrayList<Object> getAll() {
         return null;
     }
 }
