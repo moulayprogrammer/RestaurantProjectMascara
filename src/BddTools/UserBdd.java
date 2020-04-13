@@ -61,14 +61,15 @@ public class UserBdd extends BDD {
                 users.setUserName(rs.getString(2));
                 users.setPassWord(rs.getString(3));
                 users.setType(rs.getString(4));
+                users.setNom(rs.getString(5));
+                users.setPrenom(rs.getString(6));
+                users.setTel(rs.getString(7));
                 list.add(users);
             }
 
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
-
 
         return list;
     }

@@ -19,7 +19,7 @@ import java.util.*;
 
 import static javafx.fxml.FXMLLoader.load;
 
-public class UserController implements Initializable{
+public class LoginCon {
     @FXML
     TextField Username;
     @FXML
@@ -84,8 +84,5 @@ public class UserController implements Initializable{
      Platform.exit();
  }
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
 
-    }
 }
