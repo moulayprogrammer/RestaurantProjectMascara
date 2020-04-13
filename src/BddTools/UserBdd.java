@@ -11,7 +11,18 @@ import java.util.List;
 public class UserBdd extends BDD {
     @Override
     public boolean insert(Object o) {
-        return false;
+        User user =  (User)o;
+      String sql="insert into Users(UserName,Password,Nom,Prenom,Tel,Type)values('"+user.getUserName()+"','"+user.getPassWord()+"','"+user.getNom()+"','"+user.getPrenom()+"','"+user.getTel()+"','"+user.getType()+"');";
+        try {
+            Statement stmt = conn.createStatement();
+            stmt.execute(sql);
+                return true;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+
     }
 
     @Override

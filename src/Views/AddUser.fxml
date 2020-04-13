@@ -9,7 +9,7 @@
 
 <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="616.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddUserCon">
    <children>
-      <Button layoutX="110.0" layoutY="552.0" mnemonicParsing="false" text="إضافة مستخدم ">
+      <Button layoutX="110.0" layoutY="552.0" mnemonicParsing="false" onAction="#AddUser" text="إضافة مستخدم ">
          <font>
             <Font size="18.0" />
          </font>
@@ -19,11 +19,11 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <TextField layoutX="316.0" layoutY="46.0" />
-      <TextField layoutX="317.0" layoutY="115.0" />
-      <TextField layoutX="317.0" layoutY="185.0" />
-      <TextField layoutX="317.0" layoutY="250.0" />
-      <TextField layoutX="316.0" layoutY="318.0" />
+      <TextField fx:id="username" layoutX="316.0" layoutY="46.0" />
+      <TextField fx:id="password" layoutX="317.0" layoutY="115.0" />
+      <TextField fx:id="confirmpassword" layoutX="317.0" layoutY="185.0" />
+      <TextField fx:id="nom" layoutX="317.0" layoutY="250.0" />
+      <TextField fx:id="prenom" layoutX="316.0" layoutY="318.0" />
       <Label layoutX="88.0" layoutY="38.0" prefHeight="27.0" prefWidth="95.0" text="الاسم المستخدم ">
          <font>
             <Font size="18.0" />
@@ -59,7 +59,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <TextField layoutX="313.0" layoutY="378.0" />
-      <ComboBox fx:id="combobox" layoutX="313.0" layoutY="448.0" prefWidth="150.0" promptText="اختر مهنة " />
+      <TextField fx:id="tel" layoutX="313.0" layoutY="378.0" />
+      <ComboBox fx:id="type" accessibleHelp="اختر مهنة " accessibleRoleDescription="اختر مهنة " accessibleText="اختر مهنة " layoutX="313.0" layoutY="448.0" prefWidth="150.0" />
    </children>
 </AnchorPane>
