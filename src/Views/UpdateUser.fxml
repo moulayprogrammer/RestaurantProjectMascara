@@ -7,13 +7,8 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="UpdateBtn" nodeOrientation="RIGHT_TO_LEFT" prefHeight="616.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddUserCon">
+<AnchorPane fx:id="UpdateBtn" nodeOrientation="RIGHT_TO_LEFT" prefHeight="616.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UpdateUserCon">
    <children>
-      <Button fx:id="btnInsrt" layoutX="110.0" layoutY="552.0" mnemonicParsing="false" onAction="#AddUser" text="إضافة مستخدم ">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Button>
       <Button layoutX="364.0" layoutY="552.0" mnemonicParsing="false" text="الغاء الامر ">
          <font>
             <Font size="18.0" />
@@ -61,7 +56,7 @@
       </Label>
       <TextField fx:id="tel" layoutX="313.0" layoutY="378.0" />
       <ComboBox fx:id="type" accessibleHelp="اختر مهنة " accessibleRoleDescription="اختر مهنة " accessibleText="اختر مهنة " layoutX="313.0" layoutY="448.0" prefWidth="150.0" />
-      <Button fx:id="btnUpdate" layoutX="110.0" layoutY="551.0" mnemonicParsing="false" onAction="#AddUser" text="تعديل المستخدم " visible="false">
+      <Button fx:id="btnUpdate" layoutX="110.0" layoutY="551.0" mnemonicParsing="false" onAction="#Update" text="تعديل المستخدم ">
          <font>
             <Font size="18.0" />
          </font>

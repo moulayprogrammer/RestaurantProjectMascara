@@ -31,8 +31,20 @@ public class UserBdd extends BDD {
     }
 
     @Override
-    public boolean delete(Object o) {
-        return false;
+    public boolean delete(Object o)
+    {
+        User user =  (User)o;
+        String sql= " DELETE from Users where Id='"+user.getId()+"';";
+
+
+        try {
+            Statement stmt = conn.createStatement();
+            stmt.execute(sql);
+                return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     @Override
@@ -40,6 +52,26 @@ public class UserBdd extends BDD {
         User user =  (User)o;
 
         String sql= " select * from Users where UserName = '"+user.getUserName()+"' and Password = '"+user.getPassWord()+"';";
+
+
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet rs    = stmt.executeQuery(sql);
+            if(rs.next()){
+                return true;
+            }else{
+                return false;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+    public boolean isExistuser(Object o) {
+        User user =  (User)o;
+
+        String sql= " select * from Users where UserName = '"+user.getUserName()+"' ;";
 
 
         try {

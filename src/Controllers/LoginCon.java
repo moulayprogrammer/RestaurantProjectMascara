@@ -61,7 +61,7 @@ public class LoginCon {
 
                         }else{
                             Parent  root = FXMLLoader.load(getClass().getResource("../Views/Cuisine.fxml"));
-                            Scene scene=new Scene(root,700,500);
+                            Scene scene=new Scene(root,1152,628);
                             primaryStage.setTitle("لوحة التحكم ");
                             primaryStage.setScene( scene );
                             primaryStage.show();

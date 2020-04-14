@@ -1,16 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginCon">
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="628.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginCon">
    <children>
-      <Label layoutX="224.0" layoutY="160.0" text="Cuisine">
+      <Label layoutX="365.0" layoutY="-9.0" text="الطلبـــــــــــــــــــــــــــــــــــــات">
          <font>
             <Font size="54.0" />
          </font>
       </Label>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="9.0" layoutY="41.0" mnemonicParsing="false" prefHeight="116.0" prefWidth="155.0" text="الاصنـــــــــــــــــاف" textAlignment="CENTER" textOverrun="CLIP">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Category.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="9.0" layoutY="187.0" mnemonicParsing="false" prefHeight="116.0" prefWidth="155.0" text="الوجبات" textAlignment="CENTER" textOverrun="CLIP">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Food.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="9.0" layoutY="333.0" mnemonicParsing="false" prefHeight="116.0" prefWidth="155.0" text="لمشروبات" textAlignment="CENTER" textOverrun="CLIP">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/drinks.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="8.0" layoutY="476.0" mnemonicParsing="false" prefHeight="116.0" prefWidth="155.0" text="تسجيل الخروج" textAlignment="CENTER" textOverrun="CLIP">
+         <graphic>
+            <ImageView fitHeight="100.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>

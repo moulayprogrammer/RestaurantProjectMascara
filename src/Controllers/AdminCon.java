@@ -11,12 +11,9 @@ public class AdminCon {
     public  void Users() throws IOException {
 
             Stage primaryStage=new Stage();
-        Parent root = null;
-
-            root = FXMLLoader.load(getClass().getResource("../Views/User.fxml"));
-
-        Scene scene=new Scene(root,1152,610);
-            primaryStage.setTitle("لوحة التحكم ");
+            Parent root = FXMLLoader.load(getClass().getResource("../Views/User.fxml"));
+            Scene scene=new Scene(root,1152,610);
+            primaryStage.setTitle("لوحة التحكم المستخدمين  ");
             primaryStage.setScene( scene );
             primaryStage.show();
 

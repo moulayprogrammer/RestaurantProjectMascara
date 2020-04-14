@@ -11,6 +11,7 @@ public class User {
 
 
     public User(){}
+    public User(int Id){this.Id=Id;}
 
     public User(int Id,String UserName,String PassWord,String Type,String Nom,String Prenom,String Tel){
         this.Id=Id;
