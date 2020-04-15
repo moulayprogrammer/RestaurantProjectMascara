@@ -1,5 +1,7 @@
 package BddTools;
 
+import Moduls.User;
+
 import java.util.ArrayList;
 
 public class FoodOrderBdd extends BDD {
@@ -25,7 +27,7 @@ public class FoodOrderBdd extends BDD {
     }
 
     @Override
-    public ArrayList<Object> getAll() {
+    public ArrayList<User> getAll() {
         return null;
     }
 }

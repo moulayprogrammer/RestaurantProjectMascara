@@ -1,5 +1,7 @@
 package BddTools;
 
+import Moduls.User;
+
 import java.util.ArrayList;
 
 public class MenuBdd extends BDD {
@@ -25,7 +27,7 @@ public class MenuBdd extends BDD {
     }
 
     @Override
-    public ArrayList<Object> getAll() {
+    public ArrayList<User> getAll() {
         return null;
     }
 }

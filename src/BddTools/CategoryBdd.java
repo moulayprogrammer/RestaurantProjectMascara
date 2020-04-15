@@ -1,13 +1,8 @@
 package BddTools;
 
-import Moduls.Category;
+import Moduls.User;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.List;
 
 public class CategoryBdd extends BDD{
 
@@ -36,7 +31,7 @@ public class CategoryBdd extends BDD{
     }
 
     @Override
-    public ArrayList<Object> getAll(){
+    public ArrayList<User> getAll(){
         return null;
     }
 }

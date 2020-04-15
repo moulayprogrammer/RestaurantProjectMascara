@@ -55,17 +55,13 @@ public class UserCon implements Initializable {
 
 }
   public void Update() throws IOException {
-        /* get user */
-      /**
-       * *
-       */
-      User user = getSelectdMeeals();
+
+        User user = getSelectdMeeals();
         Stage primaryStage=new Stage();
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/UpdateUser.fxml"));
         AnchorPane temp = loader.load();
         UpdateUserCon Controller = loader.getController();
         Controller.Init(user);
-        // Parent root = FXMLLoader.load(getClass().getResource("/Views/UpdateUser.fxml"));
         Scene scene=new Scene(temp,534,616);
         primaryStage.setTitle("تعديل بيانات المستخدم ");
         primaryStage.setScene( scene );
@@ -76,7 +72,6 @@ public class UserCon implements Initializable {
 
     }
     public void Delete(){
-//        int Id=getSelectdMeeals().getId();
         User user = getSelectdMeeals();
         UserBdd userBdd=new UserBdd();
         boolean delete=userBdd.delete(user);

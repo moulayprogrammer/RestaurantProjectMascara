@@ -1,10 +1,10 @@
 package BddTools;
 
+import Moduls.User;
 import javafx.scene.control.Alert;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.List;
 
 abstract class BDD {
 
@@ -50,7 +50,7 @@ abstract class BDD {
 
     abstract public  boolean isExist(Object o);
 
-    abstract public<T> ArrayList<T> getAll();
+    abstract public<T> ArrayList<User> getAll();
 
      void insert(String nom, String prenom) {
 

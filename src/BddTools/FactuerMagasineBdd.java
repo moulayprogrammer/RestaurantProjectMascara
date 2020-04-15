@@ -1,5 +1,7 @@
 package BddTools;
 
+import Moduls.User;
+
 import java.util.ArrayList;
 
 public class FactuerMagasineBdd extends BDD {
@@ -24,7 +26,7 @@ public class FactuerMagasineBdd extends BDD {
     }
 
     @Override
-    public ArrayList<Object> getAll() {
+    public ArrayList<User> getAll() {
         return null;
     }
 }

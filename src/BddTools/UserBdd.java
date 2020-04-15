@@ -5,8 +5,6 @@ import Moduls.User;
 
 import java.util.ArrayList;
 import java.sql.*;
-import java.util.Collections;
-import java.util.List;
 
 public class UserBdd extends BDD {
     @Override
