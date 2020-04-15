@@ -65,7 +65,52 @@
             <Cursor fx:constant="S_RESIZE" />
          </cursor>
       </Button>
-      <Button alignment="CENTER" contentDisplay="TOP" layoutX="489.0" layoutY="185.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="128.0" text="نسخة احتياطية ">
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="489.0" layoutY="185.0" mnemonicParsing="false" onAction="#Magasine" prefHeight="150.0" prefWidth="128.0" text="امين المخزن">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="96.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/store%20.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="337.0" layoutY="184.0" mnemonicParsing="false" onAction="#Caissier" prefHeight="150.0" prefWidth="128.0" text="الصراف ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="96.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Cashier.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="180.0" layoutY="184.0" mnemonicParsing="false" onAction="#Cuisine" prefHeight="150.0" prefWidth="128.0" text="الطباخ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="96.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/PngItem_1078159.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="30.0" layoutY="184.0" mnemonicParsing="false" prefHeight="150.0" prefWidth="128.0" text="نسخة احتياطية ">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>

@@ -17,6 +17,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 
@@ -54,29 +55,39 @@ public class UserCon implements Initializable {
 
 }
   public void Update() throws IOException {
+        /* get user */
+      /**
+       * *
+       */
+      User user = getSelectdMeeals();
         Stage primaryStage=new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/Views/UpdateUser.fxml"));
-        Scene scene=new Scene(root,534,616);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/UpdateUser.fxml"));
+        AnchorPane temp = loader.load();
+        UpdateUserCon Controller = loader.getController();
+        Controller.Init(user);
+        // Parent root = FXMLLoader.load(getClass().getResource("/Views/UpdateUser.fxml"));
+        Scene scene=new Scene(temp,534,616);
         primaryStage.setTitle("تعديل بيانات المستخدم ");
         primaryStage.setScene( scene );
         primaryStage.show();
-        System.out.println(getSelectdMeeals());
+
 
 
 
     }
     public void Delete(){
-        int Id=getSelectdMeeals();
-        User user=new User(Id);
+//        int Id=getSelectdMeeals().getId();
+        User user = getSelectdMeeals();
         UserBdd userBdd=new UserBdd();
         boolean delete=userBdd.delete(user);
         if(delete)
             JOptionPane.showMessageDialog(null, "لقد تم إزالة  المستخدم بنجاح");
     }
-    public int getSelectdMeeals(){
+    public User getSelectdMeeals(){
+
         User user = TableUser.getSelectionModel().getSelectedItem();
-        int id=user.getId();
-        return id;
+      //   id=user.getId();
+        return user;
     }
     public void exit(){
         Platform.exit();

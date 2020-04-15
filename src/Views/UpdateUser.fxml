@@ -14,7 +14,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <TextField fx:id="username" layoutX="316.0" layoutY="46.0" />
+      <TextField fx:id="username" disable="true" layoutX="316.0" layoutY="46.0" />
       <TextField fx:id="password" layoutX="317.0" layoutY="115.0" />
       <TextField fx:id="confirmpassword" layoutX="317.0" layoutY="185.0" />
       <TextField fx:id="nom" layoutX="317.0" layoutY="250.0" />

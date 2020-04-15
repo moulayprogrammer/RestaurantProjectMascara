@@ -15,7 +15,7 @@
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="135.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/th.jpg" />
+                  <Image url="@../img/clipart835784.png" />
                </image>
             </ImageView>
             <TextField fx:id="Username" layoutX="188.0" layoutY="255.0" prefHeight="31.0" prefWidth="187.0" />

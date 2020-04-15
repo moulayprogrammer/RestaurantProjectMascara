@@ -27,7 +27,21 @@ public class UserBdd extends BDD {
 
     @Override
     public boolean update(Object o1, Object o2) {
-        return false;
+        User user =  (User)o1;
+        User user2 =  (User)o2;
+
+        String sql= "UPDATE Users SET  Password = '"+user.getPassWord()+"',Type='"+user.getType()+"',Nom='"+user.getNom()+"',Prenom='"+user.getPrenom()+"',Tel='"+user.getTel()+"' WHERE Id='"+user2.getId()+"';";
+
+
+        try {
+            Statement stmt = conn.createStatement();
+            stmt.execute(sql);
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+
     }
 
     @Override
@@ -115,5 +129,33 @@ public class UserBdd extends BDD {
         }
 
         return list;
+    }
+    public User getUser(Object o){
+        User user1 =  (User)o;
+        User users=new User();
+
+
+        String sql= "select * from Users where Id='"+user1.getId()+"';";
+
+        try {
+            Statement stmt = conn.createStatement();
+            ResultSet rs    = stmt.executeQuery(sql);
+            while (rs.next()) {
+
+                users.setId(rs.getInt(1));
+                users.setUserName(rs.getString(2));
+                users.setPassWord(rs.getString(3));
+                users.setType(rs.getString(4));
+                users.setNom(rs.getString(5));
+                users.setPrenom(rs.getString(6));
+                users.setTel(rs.getString(7));
+              //  return users;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+
+        }
+        return users;
     }
 }

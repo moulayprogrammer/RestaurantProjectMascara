@@ -30,28 +30,51 @@ public class UpdateUserCon implements Initializable {
     @FXML
     private TextField tel;
 
-    public void Update(){
-    User user =new User();
-    UserCon userCon=new UserCon();
-       System.out.println(userCon.getSelectdMeeals());
+    private User oldUser;
+    private User user1;
 
+    public void Init(User user){
+        oldUser = user;
         UserBdd userBdd=new UserBdd();
-        if(!userBdd.isExistuser(user)){
-           if(password.equals(confirmpassword.getText())) {
-               boolean adduser = userBdd.insert(user);
+        user1=userBdd.getUser(oldUser);
+        Display(user1);
+
+    }
+
+    private void Display(User  user){
+        username.setText(user.getUserName());
+        password.setText(user.getPassWord());
+        confirmpassword.setText(user.getPassWord());
+        nom.setText(user.getNom());
+        prenom.setText(user.getPrenom());
+        tel.setText(user.getTel());
+        type.setValue(user.getType());
+    }
+
+    public void Update(){
+        UserCon userCon=new UserCon();
+        UserBdd userBdd=new UserBdd();
+        User user =new User();
+       // User user2=new User(userCon.getSelectdMeeals());
+
+        user.setUserName(username.getText());
+        user.setPrenom(password.getText());
+        user.setNom(nom.getText());
+        user.setPrenom(prenom.getText());
+        user.setTel(tel.getText());
+        user.setType(type.getSelectionModel().getSelectedItem().toString());
+
+        String ps = password.getText();
+        String psC = confirmpassword.getText();
+        if(ps.matches(psC)) {
+
+
+               boolean adduser = userBdd.update(user,oldUser);
                if (adduser)
-                   JOptionPane.showMessageDialog(null, "لقد تم إضافة المستخدم بنجاح");
-           }else {
-               JOptionPane.showMessageDialog(null,"كلمة المرور غير متطابقة ");
-               username.setText("");
-               password.setText("");
-               confirmpassword.setText("");
-               nom.setText("");
-               prenom.setText("");
-               tel.setText("");
-           }
+                   JOptionPane.showMessageDialog(null, "لقد تم تعديل بيانات المستخدم المستخدم بنجاح");
+
         }else {
-            JOptionPane.showMessageDialog(null,"الاسم المستخدم هذا موجود مسبقا ");
+            JOptionPane.showMessageDialog(null,"كلمة المرور غير متطابقتان");
             username.setText("");
             password.setText("");
             confirmpassword.setText("");

@@ -19,4 +19,31 @@ public class AdminCon {
 
 
     }
+    public  void Magasine() throws IOException{
+        Stage primaryStage=new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("../Views/Mgasinier.fxml"));
+        Scene scene=new Scene(root,1080,606);
+        primaryStage.setTitle("لوحة التحكم امين الخزن  ");
+        primaryStage.setScene( scene );
+        primaryStage.show();
+
+    }
+    public  void Cuisine() throws IOException{
+        Stage primaryStage=new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("../Views/Cuisine.fxml"));
+        Scene scene=new Scene(root,1152,610);
+        primaryStage.setTitle("لوحة التحكم الطباخ  ");
+        primaryStage.setScene( scene );
+        primaryStage.show();
+
+    }
+    public  void Caissier() throws IOException{
+        Stage primaryStage=new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("../Views/Caissier.fxml"));
+        Scene scene=new Scene(root,1152,610);
+        primaryStage.setTitle("لوحة التحكم الصراف  ");
+        primaryStage.setScene( scene );
+        primaryStage.show();
+
+    }
 }

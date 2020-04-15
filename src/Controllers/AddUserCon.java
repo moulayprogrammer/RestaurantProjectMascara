@@ -41,9 +41,15 @@ public class AddUserCon implements Initializable {
 
 
         if(!userBdd.isExistuser(user)){
-               boolean adduser = userBdd.insert(user);
-               if (adduser)
-                   JOptionPane.showMessageDialog(null, "لقد تم إضافة المستخدم بنجاح");
+            String ps = password.getText();
+            String psC = confirmpassword.getText();
+            if(ps.matches(psC)) {
+                boolean adduser = userBdd.insert(user);
+                if (adduser)
+                    JOptionPane.showMessageDialog(null, "لقد تم إضافة المستخدم بنجاح");
+            }else{
+                System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+            }
         }else {
             JOptionPane.showMessageDialog(null,"الاسم المستخدم هذا موجود مسبقا ");
             username.setText("");
