@@ -45,19 +45,19 @@ public class FournisourCon implements Initializable {
     }
     public void Update() throws IOException {
         Fornisour fornisour = getSelectdMeeals();
-        Stage primaryStage=new Stage();
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/UpdateFornisour.fxml"));
-        AnchorPane temp = loader.load();
-        UpdateForniserCon Controller = loader.getController();
-        Controller.Init(fornisour);
-        Scene scene=new Scene(temp,534,616);
-        primaryStage.setTitle("تعديل بيانات المورد ");
-        primaryStage.setScene( scene );
-        primaryStage.show();
-
-
-
-
+        if(fornisour==null)
+            JOptionPane.showMessageDialog(null, "يرجى تحديد المورد المراد تعديل بياناته");
+        else {
+            Stage primaryStage=new Stage();
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/UpdateFornisour.fxml"));
+            AnchorPane temp = loader.load();
+            UpdateForniserCon Controller = loader.getController();
+            Controller.Init(fornisour);
+            Scene scene=new Scene(temp,534,616);
+            primaryStage.setTitle("تعديل بيانات المورد ");
+            primaryStage.setScene( scene );
+            primaryStage.show();
+        }
     }
     public void Delete(){
         Fornisour fornisour = getSelectdMeeals();

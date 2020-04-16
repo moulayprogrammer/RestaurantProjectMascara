@@ -31,15 +31,15 @@ public class UpdateForniserCon {
         email.setText(oldFornisour.getEmail());
     }
     public void Update(){
-        FornisourBdd userBdd=new FornisourBdd();
+        FornisourBdd fornisourBdd=new FornisourBdd();
         Fornisour fornisour=new Fornisour();
         fornisour.setNom(nom.getText());
         fornisour.setPrenom(prenom.getText());
         fornisour.setTel(tel.getText());
         fornisour.setEmail(email.getText());
 
-            boolean adduser = userBdd.update(fornisour,oldFornisour);
-            if (adduser)
+            boolean fouenisour = fornisourBdd.update(fornisour,oldFornisour);
+            if (fouenisour)
                 JOptionPane.showMessageDialog(null, "لقد تم تعديل بيانات المورد بنجاح");
     }
 }

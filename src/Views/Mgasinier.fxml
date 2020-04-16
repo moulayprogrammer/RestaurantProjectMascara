@@ -13,7 +13,7 @@
             <Image url="@../img/Untitled-2.jpg" />
          </image>
       </ImageView>
-      <Button contentDisplay="RIGHT" layoutX="19.0" layoutY="72.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="182.0" text="المنتوجات ">
+      <Button contentDisplay="RIGHT" layoutX="19.0" layoutY="72.0" mnemonicParsing="false" onAction="#Produit" prefHeight="76.0" prefWidth="182.0" text="المنتوجات ">
          <graphic>
             <ImageView fitHeight="64.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -73,7 +73,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="19.0" layoutY="164.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="182.0" text="الاصناف">
+      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="19.0" layoutY="164.0" mnemonicParsing="false" onAction="#Category" prefHeight="76.0" prefWidth="182.0" text="الاصناف">
          <graphic>
             <ImageView fitHeight="64.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                <image>

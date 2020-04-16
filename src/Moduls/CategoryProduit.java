@@ -1,19 +1,19 @@
 package Moduls;
 
-public class Category {
+public class CategoryProduit {
 
     private int id;
     private String name;
 
-    public Category() {
+    public CategoryProduit() {
     }
 
-    public Category(int id, String name) {
+    public CategoryProduit(int id, String name) {
         this.id = id;
         this.name = name;
     }
 
-    public Category(String name) {
+    public CategoryProduit(String name) {
         this.name = name;
     }
 

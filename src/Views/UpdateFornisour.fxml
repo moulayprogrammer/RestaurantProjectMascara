@@ -40,13 +40,33 @@
             <Font size="18.0" />
          </font>
       </TextField>
-      <ImageView fitHeight="195.0" fitWidth="182.0" layoutX="149.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="195.0" fitWidth="182.0" layoutX="179.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/supplier.png" />
+            <Image url="@../img/Male-user-edit-icon.png" />
          </image>
       </ImageView>
-      <Button layoutX="42.0" layoutY="570.0" mnemonicParsing="false" onAction="#Update" prefHeight="32.0" prefWidth="152.0" text="تعديل بيانات المورد" />
-      <Button layoutX="263.0" layoutY="570.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="152.0" text="الغاء الامر " />
+      <Button contentDisplay="RIGHT" layoutX="93.0" layoutY="570.0" mnemonicParsing="false" onAction="#Update" prefHeight="32.0" prefWidth="152.0" text="تعديل بيانات المورد">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Apps-system-software-update-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button contentDisplay="RIGHT" layoutX="281.0" layoutY="570.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="152.0" text="الغاء الامر " textFill="RED">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
       <Label layoutX="63.0" layoutY="448.0" text="الايميل : ">
          <font>
             <Font name="Arial" size="30.0" />
