@@ -9,6 +9,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 
 import javax.swing.*;
 import java.net.URL;
@@ -29,6 +30,7 @@ public class AddUserCon implements Initializable {
     private TextField prenom;
     @FXML
     private TextField tel;
+    private boolean adduser=false;
     public void AddUser(){
     User user =new User();
         user.setUserName(username.getText());
@@ -44,11 +46,11 @@ public class AddUserCon implements Initializable {
             String ps = password.getText();
             String psC = confirmpassword.getText();
             if(ps.matches(psC)) {
-                boolean adduser = userBdd.insert(user);
+                 adduser = userBdd.insert(user);
                 if (adduser)
                     JOptionPane.showMessageDialog(null, "لقد تم إضافة المستخدم بنجاح");
             }else{
-                System.out.println("bbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+                    JOptionPane.showMessageDialog(null, "لا يمكن اضافة مستخدم ");
             }
         }else {
             JOptionPane.showMessageDialog(null,"الاسم المستخدم هذا موجود مسبقا ");
@@ -59,8 +61,7 @@ public class AddUserCon implements Initializable {
             prenom.setText("");
             tel.setText("");
         }
-
-
+       
     }
     @Override
     public void initialize(URL location, ResourceBundle resources) {

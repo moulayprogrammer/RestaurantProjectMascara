@@ -32,7 +32,7 @@ public class CategoryProduitCon implements Initializable {
     private TableColumn<CategoryProduit,String>nom;
     public void AddCategory() throws IOException {
         Stage primaryStage=new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../Views/AddCategory.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../Views/AddCategoryProduit.fxml"));
         Scene scene=new Scene(root,414,435);
         primaryStage.setTitle("إضافة صنف جديد ");
         primaryStage.setScene( scene );

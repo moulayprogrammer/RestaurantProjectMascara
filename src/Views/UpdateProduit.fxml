@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="638.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddProduit">
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="638.0" prefWidth="463.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UpdateProduitCon">
    <children>
       <Label layoutX="42.0" layoutY="188.0" text="إسم المنتوج :">
          <font>
@@ -33,14 +33,14 @@
       </Label>
       <ImageView fitHeight="195.0" fitWidth="182.0" layoutX="149.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/add-product-icon-png-2.png" />
+            <Image url="@../img/Apps-system-software-update-icon.png" />
          </image>
       </ImageView>
-      <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="48.0" layoutY="582.0" mnemonicParsing="false" onAction="#insert" prefHeight="32.0" prefWidth="152.0" text="إضافة منتوج">
+      <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="48.0" layoutY="582.0" mnemonicParsing="false" onAction="#Update" prefHeight="32.0" prefWidth="152.0" text="تعديل المنتـــــوج">
          <graphic>
             <ImageView fitHeight="34.0" fitWidth="94.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/add-product-icon-png-2.png" />
+                  <Image url="@../img/Apps-system-software-update-icon.png" />
                </image>
             </ImageView>
          </graphic>

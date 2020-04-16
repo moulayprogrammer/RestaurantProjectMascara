@@ -24,7 +24,7 @@
                 <Font name="System Bold" size="14.0" />
             </font>
         </Button>
-        <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="17.0" layoutY="250.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="182.0" text="حذف المــــــنتوج">
+        <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="17.0" layoutY="250.0" mnemonicParsing="false" onAction="#Delete" prefHeight="76.0" prefWidth="182.0" text="حذف المــــــنتوج">
             <graphic>
                 <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -48,7 +48,7 @@
                 <Font size="18.0" />
             </font>
         </Button>
-        <Button contentDisplay="RIGHT" layoutX="19.0" layoutY="164.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="182.0" text="تعديل بيانات المنتوج">
+        <Button contentDisplay="RIGHT" layoutX="19.0" layoutY="164.0" mnemonicParsing="false" onAction="#Update" prefHeight="76.0" prefWidth="182.0" text="تعديل بيانات المنتوج">
             <graphic>
                 <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -60,11 +60,11 @@
                 <Font name="System Bold" size="14.0" />
             </font>
         </Button>
-      <TableView fx:id="TableFornisour" layoutX="213.0" layoutY="70.0" prefHeight="525.0" prefWidth="773.0">
+      <TableView fx:id="TableProduit" layoutX="213.0" layoutY="70.0" onMouseClicked="#getSelectdMeeals" prefHeight="525.0" prefWidth="773.0">
         <columns>
           <TableColumn fx:id="ID" prefWidth="75.0" text="الرقم " />
           <TableColumn fx:id="nom" prefWidth="75.0" text="اسم المنتوج " />
-            <TableColumn fx:id="prenom" prefWidth="75.0" text="الفئة " />
+            <TableColumn fx:id="category" prefWidth="75.0" text="الفئة " />
         </columns>
          <columnResizePolicy>
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
