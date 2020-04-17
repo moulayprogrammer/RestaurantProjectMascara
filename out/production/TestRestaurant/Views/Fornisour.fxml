@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="607.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FournisourCon">
+    <children>
+        <Button contentDisplay="RIGHT" layoutX="19.0" layoutY="75.0" mnemonicParsing="false" onAction="#IsertFornisour" prefHeight="76.0" prefWidth="182.0" text="اضافة مورد جديد ">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/Male-user-add-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="17.0" layoutY="250.0" mnemonicParsing="false" onAction="#Delete" prefHeight="76.0" prefWidth="182.0" text="حذف بيانات المورد">
+            <graphic>
+                <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/Delete-group-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="Arial Bold" size="16.0" />
+            </font>
+        </Button>
+        <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="13.0" layoutY="342.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="182.0" text="تسجيل الخروج">
+            <graphic>
+                <ImageView fitHeight="64.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/exit.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button contentDisplay="RIGHT" layoutX="19.0" layoutY="164.0" mnemonicParsing="false" onAction="#Update" prefHeight="76.0" prefWidth="182.0" text="تعديل بيانات المورد">
+            <graphic>
+                <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/Apps-system-software-update-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+      <TableView fx:id="TableFornisour" layoutX="213.0" layoutY="70.0" onMouseClicked="#getSelectdMeeals" prefHeight="525.0" prefWidth="773.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="الرقم " />
+          <TableColumn fx:id="nom" prefWidth="75.0" text="اسم الشركة" />
+            <TableColumn fx:id="prenom" prefWidth="75.0" text="الاسم الشخصي" />
+            <TableColumn fx:id="tel" prefWidth="69.0" text="رقم الهاتف " />
+            <TableColumn fx:id="email" prefWidth="240.0" text="الايميل" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField layoutX="389.0" layoutY="29.0" prefHeight="30.0" prefWidth="591.0" />
+      <Label layoutX="231.0" layoutY="29.0" text="بحــــــــــث عن مورد">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

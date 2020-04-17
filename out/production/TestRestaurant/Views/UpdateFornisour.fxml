@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="623.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UpdateForniserCon">
+   <children>
+      <Label layoutX="66.0" layoutY="203.0" text="اسم الشركة: ">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nom" layoutX="234.0" layoutY="202.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="67.0" layoutY="283.0" text="الاسم الشخصي :">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="prenom" layoutX="234.0" layoutY="282.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label layoutX="65.0" layoutY="364.0" text="رقم الهاتف : ">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tel" layoutX="232.0" layoutY="361.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <ImageView fitHeight="195.0" fitWidth="182.0" layoutX="179.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/Male-user-edit-icon.png" />
+         </image>
+      </ImageView>
+      <Button contentDisplay="RIGHT" layoutX="93.0" layoutY="570.0" mnemonicParsing="false" onAction="#Update" prefHeight="32.0" prefWidth="152.0" text="تعديل بيانات المورد">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Apps-system-software-update-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button contentDisplay="RIGHT" layoutX="281.0" layoutY="570.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="152.0" text="الغاء الامر " textFill="RED">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label layoutX="63.0" layoutY="448.0" text="الايميل : ">
+         <font>
+            <Font name="Arial" size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="230.0" layoutY="445.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

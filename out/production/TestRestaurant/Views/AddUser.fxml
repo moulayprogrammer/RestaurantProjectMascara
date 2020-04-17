@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="UpdateBtn" nodeOrientation="RIGHT_TO_LEFT" prefHeight="616.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddUserCon">
+   <children>
+      <Button fx:id="btnInsrt" layoutX="180.0" layoutY="551.0" mnemonicParsing="false" onAction="#AddUser" prefHeight="39.0" prefWidth="187.0" text="إضافة مستخدم ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="403.0" layoutY="551.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="187.0" text="الغاء الامر ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" layoutX="316.0" layoutY="46.0" />
+      <TextField fx:id="password" text="confirm" layoutX="317.0" layoutY="115.0" />
+      <TextField fx:id="confirmpassword" text="confirm" layoutX="317.0" layoutY="185.0" />
+      <TextField fx:id="nom" layoutX="317.0" layoutY="250.0" />
+      <TextField fx:id="prenom" layoutX="316.0" layoutY="318.0" />
+      <Label layoutX="88.0" layoutY="38.0" prefHeight="27.0" prefWidth="95.0" text="الاسم المستخدم ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="110.0" prefHeight="27.0" prefWidth="95.0" text="كلمة المرور ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="183.0" prefHeight="27.0" prefWidth="120.0" text="تاكيد كلمة المرور">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="249.0" prefHeight="27.0" prefWidth="95.0" text="اللقب">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="315.0" prefHeight="27.0" prefWidth="95.0" text="الاسم ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="367.0" prefHeight="27.0" prefWidth="95.0" text="رقم الهاتف ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="434.0" prefHeight="27.0" prefWidth="95.0" text="المهنة ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tel" layoutX="313.0" layoutY="378.0" />
+      <ComboBox fx:id="type" accessibleHelp="اختر مهنة " accessibleRoleDescription="اختر مهنة " accessibleText="اختر مهنة " layoutX="313.0" layoutY="448.0" prefWidth="150.0" />
+      <Button fx:id="btnUpdate" layoutX="110.0" layoutY="551.0" mnemonicParsing="false" onAction="#AddUser" text="تعديل المستخدم " visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="241.0" fitWidth="242.0" layoutX="528.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/—Pngtree—vector%20add%20user%20icon_3773557.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

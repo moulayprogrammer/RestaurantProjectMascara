@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="UpdateBtn" nodeOrientation="RIGHT_TO_LEFT" prefHeight="616.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UpdateUserCon">
+   <children>
+      <Button layoutX="364.0" layoutY="552.0" mnemonicParsing="false" text="الغاء الامر ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" disable="true" layoutX="316.0" layoutY="46.0" />
+      <TextField fx:id="password" layoutX="317.0" layoutY="115.0" />
+      <TextField fx:id="confirmpassword" layoutX="317.0" layoutY="185.0" />
+      <TextField fx:id="nom" layoutX="317.0" layoutY="250.0" />
+      <TextField fx:id="prenom" layoutX="316.0" layoutY="318.0" />
+      <Label layoutX="88.0" layoutY="38.0" prefHeight="27.0" prefWidth="95.0" text="الاسم المستخدم ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="110.0" prefHeight="27.0" prefWidth="95.0" text="كلمة المرور ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="183.0" prefHeight="27.0" prefWidth="120.0" text="تاكيد كلمة المرور">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="249.0" prefHeight="27.0" prefWidth="95.0" text="اللقب">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="315.0" prefHeight="27.0" prefWidth="95.0" text="الاسم ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="367.0" prefHeight="27.0" prefWidth="95.0" text="رقم الهاتف ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="100.0" layoutY="434.0" prefHeight="27.0" prefWidth="95.0" text="المهنة ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tel" layoutX="313.0" layoutY="378.0" />
+      <ComboBox fx:id="type" accessibleHelp="اختر مهنة " accessibleRoleDescription="اختر مهنة " accessibleText="اختر مهنة " layoutX="313.0" layoutY="448.0" prefWidth="150.0" />
+      <Button fx:id="btnUpdate" layoutX="110.0" layoutY="551.0" mnemonicParsing="false" onAction="#Update" text="تعديل المستخدم ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

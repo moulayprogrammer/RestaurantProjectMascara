@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="691.0" prefWidth="1196.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddFactuerMagasinCon">
+   <children>
+      <Label layoutX="366.0" layoutY="21.0" text="فاتورة جديدة ">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="91.0" fitWidth="150.0" layoutX="684.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/add.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="25.0" layoutY="108.0" text="الـــــــمورد ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="fornisuor" layoutX="176.0" layoutY="107.0" prefHeight="35.0" prefWidth="311.0" />
+      <Label layoutX="33.0" layoutY="158.0" text="المنتوج الاول ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="prduit1" layoutX="175.0" layoutY="149.0" prefHeight="35.0" prefWidth="212.0" />
+      <TextField layoutX="481.0" layoutY="149.0" prefHeight="35.0" prefWidth="176.0" />
+      <TextField layoutX="727.0" layoutY="150.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="398.0" layoutY="153.0" text="سعر الوحدة">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="153.0" text="الكمية ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1004.0" layoutY="150.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="905.0" layoutY="153.0" text="السعر الاجمالي ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="205.0" text="المنتوج الثاني">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="produit2" layoutX="176.0" layoutY="196.0" prefHeight="35.0" prefWidth="212.0" />
+      <TextField layoutX="482.0" layoutY="196.0" prefHeight="35.0" prefWidth="176.0" />
+      <TextField layoutX="728.0" layoutY="197.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="399.0" layoutY="200.0" text="سعر الوحدة">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="671.0" layoutY="200.0" text="الكمية ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1005.0" layoutY="197.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="906.0" layoutY="200.0" text="السعر الاجمالي ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="250.0" text="المنتوج الثالث">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="prduit3" layoutX="175.0" layoutY="241.0" prefHeight="35.0" prefWidth="212.0" />
+      <TextField layoutX="481.0" layoutY="241.0" prefHeight="35.0" prefWidth="176.0" />
+      <TextField layoutX="727.0" layoutY="242.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="398.0" layoutY="245.0" text="سعر الوحدة">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="245.0" text="الكمية ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1004.0" layoutY="242.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="905.0" layoutY="245.0" text="السعر الاجمالي ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="294.0" text="المنتوج الرابع ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="prduit4" layoutX="174.0" layoutY="285.0" prefHeight="35.0" prefWidth="212.0" />
+      <TextField layoutX="480.0" layoutY="285.0" prefHeight="35.0" prefWidth="176.0" />
+      <TextField layoutX="726.0" layoutY="286.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="397.0" layoutY="289.0" text="سعر الوحدة">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="289.0" text="الكمية ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1003.0" layoutY="286.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="904.0" layoutY="289.0" text="السعر الاجمالي ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="338.0" text="المنتوج الخامس">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="prduit5" layoutX="175.0" layoutY="329.0" prefHeight="35.0" prefWidth="212.0" />
+      <TextField layoutX="481.0" layoutY="329.0" prefHeight="35.0" prefWidth="176.0" />
+      <TextField layoutX="727.0" layoutY="330.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="398.0" layoutY="333.0" text="سعر الوحدة">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="333.0" text="الكمية ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1004.0" layoutY="330.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="905.0" layoutY="333.0" text="السعر الاجمالي ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="382.0" text="المنتوج السادس">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="prduit6" layoutX="176.0" layoutY="373.0" prefHeight="35.0" prefWidth="212.0" />
+      <TextField layoutX="482.0" layoutY="373.0" prefHeight="35.0" prefWidth="176.0" />
+      <TextField layoutX="728.0" layoutY="374.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="399.0" layoutY="377.0" text="سعر الوحدة">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="671.0" layoutY="377.0" text="الكمية ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1005.0" layoutY="374.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="906.0" layoutY="377.0" text="السعر الاجمالي ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="424.0" text="المنتوج السابع ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="prduit7" layoutX="175.0" layoutY="415.0" prefHeight="35.0" prefWidth="212.0" />
+      <TextField layoutX="481.0" layoutY="415.0" prefHeight="35.0" prefWidth="176.0" />
+      <TextField layoutX="727.0" layoutY="416.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="398.0" layoutY="419.0" text="سعر الوحدة">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="419.0" text="الكمية ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1004.0" layoutY="416.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="905.0" layoutY="419.0" text="السعر الاجمالي ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="467.0" text="المنتوج الثامن ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="prduit8" layoutX="174.0" layoutY="458.0" prefHeight="35.0" prefWidth="212.0" />
+      <TextField layoutX="480.0" layoutY="458.0" prefHeight="35.0" prefWidth="176.0" />
+      <TextField layoutX="726.0" layoutY="459.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="397.0" layoutY="462.0" text="سعر الوحدة">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="669.0" layoutY="462.0" text="الكمية ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1003.0" layoutY="459.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="904.0" layoutY="462.0" text="السعر الاجمالي ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="511.0" text="المنتوج التاسع ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="prduit9" layoutX="175.0" layoutY="502.0" prefHeight="35.0" prefWidth="212.0" />
+      <TextField layoutX="481.0" layoutY="502.0" prefHeight="35.0" prefWidth="176.0" />
+      <TextField layoutX="727.0" layoutY="503.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="398.0" layoutY="506.0" text="سعر الوحدة">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="506.0" text="الكمية ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1004.0" layoutY="503.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="905.0" layoutY="506.0" text="السعر الاجمالي ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="553.0" text="المنتوج العاشر ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="prduit10" layoutX="175.0" layoutY="544.0" prefHeight="35.0" prefWidth="212.0" />
+      <TextField layoutX="481.0" layoutY="544.0" prefHeight="35.0" prefWidth="176.0" />
+      <TextField layoutX="727.0" layoutY="545.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="398.0" layoutY="548.0" text="سعر الوحدة">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="670.0" layoutY="548.0" text="الكمية ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1004.0" layoutY="545.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="905.0" layoutY="548.0" text="السعر الاجمالي ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="1004.0" layoutY="593.0" prefHeight="35.0" prefWidth="176.0" />
+      <Label layoutX="864.0" layoutY="597.0" text="السعر الكلي للمنتوجات ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="522.0" layoutY="107.0" text="رقـــــــــم الفــــــــاتورة ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="726.0" layoutY="107.0" prefHeight="35.0" prefWidth="453.0" />
+      <Button contentDisplay="RIGHT" layoutX="283.0" layoutY="627.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="264.0" text="تاكيد عملية الشراء ">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/pngwave.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Button contentDisplay="RIGHT" layoutX="588.0" layoutY="627.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="247.0" text="إلغاء الامر ">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
