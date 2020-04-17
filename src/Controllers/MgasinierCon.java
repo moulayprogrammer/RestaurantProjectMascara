@@ -32,5 +32,13 @@ public class MgasinierCon {
         primaryStage.setScene( scene );
         primaryStage.show();
     }
+    public void Factuers() throws IOException {
+        Stage primaryStage=new Stage();
+        Parent root = FXMLLoader.load(getClass().getResource("../Views/FacturMagasinier.fxml"));
+        Scene scene=new Scene(root,1000,607);
+        primaryStage.setTitle("قائمة الفوتير");
+        primaryStage.setScene( scene );
+        primaryStage.show();
+    }
 
 }

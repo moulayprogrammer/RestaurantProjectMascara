@@ -1,13 +1,28 @@
 package BddTools;
 
+import Moduls.FactuerMagasin;
+import Moduls.Produit;
 import Moduls.User;
 
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 
 public class FactuerMagasineBdd extends BDD {
     @Override
     public boolean insert(Object o) {
-        return false;
+        FactuerMagasin factuerMagasin =  (FactuerMagasin)o;
+        String sql="";
+        try {
+            Statement stmt = conn.createStatement();
+            stmt.execute(sql);
+            return true;
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
+
     }
 
     @Override

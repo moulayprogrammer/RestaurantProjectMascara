@@ -37,7 +37,7 @@
             <Font name="Arial" size="18.0" />
          </font>
       </Button>
-      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="15.0" layoutY="336.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="182.0" text="الفواتير ">
+      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="15.0" layoutY="336.0" mnemonicParsing="false" onAction="#Factuers" prefHeight="76.0" prefWidth="182.0" text="الفواتير ">
          <graphic>
             <ImageView fitHeight="64.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -49,11 +49,11 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="15.0" layoutY="424.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="182.0" text="التقارير ">
+      <Button alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="15.0" layoutY="424.0" mnemonicParsing="false" prefHeight="76.0" prefWidth="182.0" text="المخزونات">
          <graphic>
             <ImageView fitHeight="64.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../img/report.png" />
+                  <Image url="@../img/vippng.com-almacen-png-1629085.png" />
                </image>
             </ImageView>
          </graphic>
