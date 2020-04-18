@@ -31,7 +31,7 @@ public class AdminCon {
     public  void Cuisine() throws IOException{
         Stage primaryStage=new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("../Views/Cuisine.fxml"));
-        Scene scene=new Scene(root,1152,610);
+        Scene scene=new Scene(root,1018,610);
         primaryStage.setTitle("لوحة التحكم الطباخ  ");
         primaryStage.setScene( scene );
         primaryStage.show();
@@ -40,7 +40,7 @@ public class AdminCon {
     public  void Caissier() throws IOException{
         Stage primaryStage=new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("../Views/Caissier.fxml"));
-        Scene scene=new Scene(root,1152,610);
+        Scene scene=new Scene(root,1053,628);
         primaryStage.setTitle("لوحة التحكم الصراف  ");
         primaryStage.setScene( scene );
         primaryStage.show();
