@@ -4,6 +4,7 @@ public class Table {
 
     private int id;
     private int number;
+    private int Active;
 
     public Table() {
     }
@@ -31,5 +32,13 @@ public class Table {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    public int getActive() {
+        return Active;
+    }
+
+    public void setActive(int active) {
+        Active = active;
     }
 }

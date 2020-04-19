@@ -39,7 +39,7 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" layoutY="229.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="171.0" text="حذف طاولة">
+      <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" layoutY="229.0" mnemonicParsing="false" onAction="#Delete" prefHeight="56.0" prefWidth="171.0" text="حذف طاولة">
          <graphic>
             <ImageView fitHeight="59.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
                <image>

@@ -14,7 +14,7 @@ public class TableBdd extends BDD<Table> {
 
     @Override
     public boolean insert(Table table) {
-        String sql="insert into \"table\" ( Number) VALUES ('"+table.getNumber()+"')";
+        String sql="insert into \"table\" ( Number,Active) VALUES ('"+table.getNumber()+"','"+table.getActive()+"')";
         try {
             Statement stmt = conn.createStatement();
             stmt.execute(sql);
@@ -24,16 +24,25 @@ public class TableBdd extends BDD<Table> {
             e.printStackTrace();
             return false;
         }
+
     }
 
     @Override
-    public boolean update(Table table, Table table1) {
+    public boolean update(Table table, Table table2) {
         return false;
     }
 
     @Override
     public boolean delete(Table table) {
-        return false;
+        String sql= "DELETE from \"table\" where Number='"+table.getNumber()+"'";
+        try {
+            Statement stmt = conn.createStatement();
+            stmt.execute(sql);
+            return true;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            return false;
+        }
     }
 
     @Override
@@ -46,8 +55,6 @@ public class TableBdd extends BDD<Table> {
 
         ArrayList<Table> list1=new ArrayList<Table>();
         String sql="select * from  \"table\"";
-
-
         try {
             Statement stmt = conn.createStatement();
             ResultSet rs    = stmt.executeQuery(sql);
@@ -55,8 +62,7 @@ public class TableBdd extends BDD<Table> {
                 Table table=new Table();
                 table.setId(rs.getInt(1));
                 table.setNumber(rs.getInt(2));
-
-
+                table.setActive(rs.getInt(3));
                 list1.add(table);
             }
 
