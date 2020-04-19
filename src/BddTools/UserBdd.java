@@ -6,28 +6,24 @@ import Moduls.User;
 import java.util.ArrayList;
 import java.sql.*;
 
-public class UserBdd extends BDD {
+public class UserBdd extends BDD<User> {
+
     @Override
-    public boolean insert(Object o) {
-        User user =  (User)o;
-      String sql="insert into Users(UserName,Password,Nom,Prenom,Tel,Type)values('"+user.getUserName()+"','"+user.getPassWord()+"','"+user.getNom()+"','"+user.getPrenom()+"','"+user.getTel()+"','"+user.getType()+"');";
+    public boolean insert(User user) {
+        String sql="insert into Users(UserName,Password,Nom,Prenom,Tel,Type)values('"+user.getUserName()+"','"+user.getPassWord()+"','"+user.getNom()+"','"+user.getPrenom()+"','"+user.getTel()+"','"+user.getType()+"');";
         try {
             Statement stmt = conn.createStatement();
             stmt.execute(sql);
-                return true;
+            return true;
 
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
         }
-
     }
 
     @Override
-    public boolean update(Object o1, Object o2) {
-        User user =  (User)o1;
-        User user2 =  (User)o2;
-
+    public boolean update(User user, User user2) {
         String sql= "UPDATE Users SET  Password = '"+user.getPassWord()+"',Type='"+user.getType()+"',Nom='"+user.getNom()+"',Prenom='"+user.getPrenom()+"',Tel='"+user.getTel()+"' WHERE Id='"+user2.getId()+"';";
 
 
@@ -39,20 +35,17 @@ public class UserBdd extends BDD {
             e.printStackTrace();
             return false;
         }
-
     }
 
     @Override
-    public boolean delete(Object o)
-    {
-        User user =  (User)o;
+    public boolean delete(User user) {
         String sql= " DELETE from Users where Id='"+user.getId()+"';";
 
 
         try {
             Statement stmt = conn.createStatement();
             stmt.execute(sql);
-                return true;
+            return true;
         } catch (SQLException e) {
             e.printStackTrace();
             return false;
@@ -60,9 +53,7 @@ public class UserBdd extends BDD {
     }
 
     @Override
-    public boolean isExist(Object o) {
-        User user =  (User)o;
-
+    public boolean isExist(User user) {
         String sql= " select * from Users where UserName = '"+user.getUserName()+"' and Password = '"+user.getPassWord()+"';";
 
 
@@ -80,8 +71,9 @@ public class UserBdd extends BDD {
             return false;
         }
     }
-    public boolean isExistuser(Object o) {
-        User user =  (User)o;
+
+
+    public boolean isExistuser(User user) {
 
         String sql= " select * from Users where UserName = '"+user.getUserName()+"' ;";
 

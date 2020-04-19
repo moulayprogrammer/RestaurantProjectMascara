@@ -9,10 +9,10 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FornisourBdd extends BDD {
+public class FornisourBdd extends BDD<Fornisour> {
+
     @Override
-    public boolean insert(Object o) {
-        Fornisour fornisour=(Fornisour)o;
+    public boolean insert(Fornisour fornisour) {
         String sql="insert into Fornisour(nome, prenom, \"n-tel\",Email) VALUES ('"+fornisour.getNom()+"','"+fornisour.getPrenom()+"','"+fornisour.getTel()+"','"+fornisour.getEmail()+"');";
         try {
             Statement stmt = conn.createStatement();
@@ -23,16 +23,10 @@ public class FornisourBdd extends BDD {
             e.printStackTrace();
             return false;
         }
-
-
-
     }
 
     @Override
-    public boolean update(Object o1, Object o2) {
-        Fornisour fornisour =  (Fornisour)o1;
-        Fornisour fornisour1 =  (Fornisour)o2;
-
+    public boolean update(Fornisour fornisour, Fornisour fornisour1) {
         String sql= "UPDATE Fornisour set Nome='"+fornisour.getNom()+"',Prenom='"+fornisour.getPrenom()+"',\"N-tel\"='"+fornisour.getTel()+"',Email='"+fornisour.getEmail()+"' where Id='"+fornisour1.getID()+"'";
 
 
@@ -47,8 +41,7 @@ public class FornisourBdd extends BDD {
     }
 
     @Override
-    public boolean delete(Object o) {
-        Fornisour fornisour =  (Fornisour)o;
+    public boolean delete(Fornisour fornisour) {
         String sql= " DELETE from fornisour where Id='"+fornisour.getID()+"';";
 
 
@@ -63,7 +56,7 @@ public class FornisourBdd extends BDD {
     }
 
     @Override
-    public boolean isExist(Object o) {
+    public boolean isExist(Fornisour fornisour) {
         return false;
     }
 

@@ -1,33 +1,34 @@
 package BddTools;
 
+import Moduls.Daten;
 import Moduls.User;
 
 import java.util.ArrayList;
 
-public class DateBdd extends BDD {
+public class DateBdd extends BDD<Daten> {
 
     @Override
-    public boolean insert(Object o) {
+    public boolean insert(Daten o) {
         return false;
     }
 
     @Override
-    public boolean update(Object o1, Object o2) {
+    public boolean update(Daten o1, Daten o2) {
         return false;
     }
 
     @Override
-    public boolean delete(Object o) {
+    public boolean delete(Daten o) {
         return false;
     }
 
     @Override
-    public boolean isExist(Object o) {
+    public boolean isExist(Daten o) {
         return false;
     }
 
     @Override
-    public ArrayList<User> getAll() {
+    public ArrayList<Daten> getAll() {
         return null;
     }
 }

@@ -8,10 +8,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class ProduitBdd extends BDD {
+public class ProduitBdd extends BDD<Produit> {
+
     @Override
-    public boolean insert(Object o) {
-        Produit produit =  (Produit)o;
+    public boolean insert(Produit produit) {
         String sql="insert into Produit (Name, Category, PurchaseUnit, RecipeUnit, Coefficient) values ('"+produit.getName()+"','"+produit.getCategory()+"','"+produit.getPurchaseUnit()+"','"+produit.getRecipeUnit()+"','"+produit.getCoefficient()+"')";
         try {
             Statement stmt = conn.createStatement();
@@ -22,14 +22,10 @@ public class ProduitBdd extends BDD {
             e.printStackTrace();
             return false;
         }
-
     }
 
     @Override
-    public boolean update(Object o1, Object o2) {
-        Produit produit =  (Produit)o1;
-        Produit produit1 =  (Produit)o2;
-
+    public boolean update(Produit produit, Produit produit1) {
         String sql= "UPDATE Produit SET Name='"+produit.getName()+"',Category='"+produit.getCategory()+"',PurchaseUnit='"+produit.getPurchaseUnit()+"',RecipeUnit='"+produit.getRecipeUnit()+"',Coefficient='"+produit.getCoefficient()+"' where Id='"+produit1.getId()+"'";
 
 
@@ -42,12 +38,10 @@ public class ProduitBdd extends BDD {
             return false;
         }
 
-
     }
 
     @Override
-    public boolean delete(Object o){
-        Produit produit =  (Produit)o;
+    public boolean delete(Produit produit) {
         String sql= " DELETE from Produit where Id='"+produit.getId()+"'";
 
 
@@ -62,9 +56,7 @@ public class ProduitBdd extends BDD {
     }
 
     @Override
-    public boolean isExist(Object o) {
-        Produit produit =  (Produit)o;
-
+    public boolean isExist(Produit produit) {
         String sql= " select * from Produit where Name = '"+produit.getName()+"';";
 
 

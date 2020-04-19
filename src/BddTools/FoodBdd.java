@@ -1,33 +1,34 @@
 package BddTools;
 
+import Moduls.Food;
 import Moduls.User;
 
 import java.util.ArrayList;
 
-public class FoodBdd extends BDD {
+public class FoodBdd extends BDD<Food> {
 
     @Override
-    public boolean insert(Object o) {
+    public boolean insert(Food o) {
         return false;
     }
 
     @Override
-    public boolean update(Object o1, Object o2) {
+    public boolean update(Food o1, Food o2) {
         return false;
     }
 
     @Override
-    public boolean delete(Object o) {
+    public boolean delete(Food o) {
         return false;
     }
 
     @Override
-    public boolean isExist(Object o) {
+    public boolean isExist(Food o) {
         return false;
     }
 
     @Override
-    public ArrayList<User> getAll() {
+    public ArrayList<Food> getAll() {
         return null;
     }
 }

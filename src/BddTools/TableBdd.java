@@ -10,11 +10,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class TableBdd extends BDD {
+public class TableBdd extends BDD<Table> {
 
     @Override
-    public boolean insert(Object o) {
-        Table table =  (Table)o;
+    public boolean insert(Table table) {
         String sql="insert into \"table\" ( Number) VALUES ('"+table.getNumber()+"')";
         try {
             Statement stmt = conn.createStatement();
@@ -25,21 +24,20 @@ public class TableBdd extends BDD {
             e.printStackTrace();
             return false;
         }
-
     }
 
     @Override
-    public boolean update(Object o1, Object o2) {
+    public boolean update(Table table, Table table1) {
         return false;
     }
 
     @Override
-    public boolean delete(Object o) {
+    public boolean delete(Table table) {
         return false;
     }
 
     @Override
-    public boolean isExist(Object o) {
+    public boolean isExist(Table table) {
         return false;
     }
 

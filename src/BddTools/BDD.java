@@ -6,7 +6,7 @@ import javafx.scene.control.Alert;
 import java.sql.*;
 import java.util.ArrayList;
 
-abstract class BDD {
+abstract class BDD<T> {
 
     Connection conn;
 
@@ -42,19 +42,13 @@ abstract class BDD {
         }
     }
 
-    abstract public boolean insert(Object o);
+    abstract public boolean insert(T o);
 
-    abstract public boolean update(Object o1,Object o2);
+    abstract public boolean update(T o1,T o2);
 
-    abstract public boolean delete(Object o);
+    abstract public boolean delete(T o);
 
-    abstract public  boolean isExist(Object o);
+    abstract public boolean isExist(T o);
 
-    abstract public<T> ArrayList<User> getAll();
-
-     void insert(String nom, String prenom) {
-
-    }
-
-
+    abstract public ArrayList<T> getAll();
 }

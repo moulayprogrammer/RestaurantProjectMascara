@@ -8,11 +8,11 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
-public class CategoryProduitBdd extends BDD{
+public class CategoryProduitBdd extends BDD<CategoryProduit>{
+
     @Override
-    public boolean insert(Object o) {
-        CategoryProduit categoryProduit = (CategoryProduit)o;
-        String sql="insert into CategoryProduit (Nom) values ('"+categoryProduit.getName()+"')";
+    public boolean insert(CategoryProduit o) {
+        String sql="insert into CategoryProduit (Nom) values ('"+o.getName()+"')";
         try {
             Statement stmt = conn.createStatement();
             stmt.execute(sql);
@@ -25,12 +25,9 @@ public class CategoryProduitBdd extends BDD{
     }
 
     @Override
-    public boolean update(Object o1, Object o2) {
+    public boolean update(CategoryProduit o1, CategoryProduit o2) {
 
-        CategoryProduit categoryProduit =  (CategoryProduit)o1;
-        CategoryProduit categoryProduit1 =  (CategoryProduit)o2;
-
-        String sql= "UPDATE CategoryProduit SET Nom='"+categoryProduit.getName()+"' where Id='"+categoryProduit1.getId()+"'";
+        String sql= "UPDATE CategoryProduit SET Nom='"+o1.getName()+"' where Id='"+o2.getId()+"'";
 
 
         try {
@@ -44,9 +41,9 @@ public class CategoryProduitBdd extends BDD{
     }
 
     @Override
-    public boolean delete(Object o) {
-        CategoryProduit categoryProduit =  (CategoryProduit)o;
-        String sql= "DELETE from CategoryProduit where Id='"+categoryProduit.getId()+"'";
+    public boolean delete(CategoryProduit o) {
+
+        String sql= "DELETE from CategoryProduit where Id='"+o.getId()+"'";
 
 
         try {
@@ -57,13 +54,12 @@ public class CategoryProduitBdd extends BDD{
             e.printStackTrace();
             return false;
         }
-
     }
 
     @Override
-    public boolean isExist(Object o) {
-        CategoryProduit category =  (CategoryProduit)o;
-        String sql= " select * from CategoryProduit where Nom= '"+category.getName()+"';";
+    public boolean isExist(CategoryProduit o) {
+
+        String sql= " Select * from CategoryProduit where Nom= '"+o.getName()+"';";
         try {
             Statement stmt = conn.createStatement();
             ResultSet rs    = stmt.executeQuery(sql);
