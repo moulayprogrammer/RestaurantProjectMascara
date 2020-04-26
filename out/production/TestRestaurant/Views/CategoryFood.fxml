@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="424.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CategoryFoodCon">
+   <children>
+      <TableView fx:id="Tablecategory" layoutX="195.0" layoutY="79.0" onMouseClicked="#getSelectdMeeals" prefHeight="337.0" prefWidth="444.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="63.0" text="الرقم " />
+          <TableColumn fx:id="nom" prefWidth="186.0" text="اسم الصنف" />
+            <TableColumn fx:id="type" prefWidth="182.0" text="نوع الصنف " />
+        </columns>
+      </TableView>
+      <Button contentDisplay="RIGHT" layoutX="9.0" layoutY="79.0" mnemonicParsing="false" onAction="#AddCategory" prefHeight="50.0" prefWidth="176.0" text="إضافة صنف جديد ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/category-icon-png-5.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="RIGHT" layoutX="11.0" layoutY="148.0" mnemonicParsing="false" onAction="#Update" prefHeight="50.0" prefWidth="176.0" text="تعديل بيانات الصنف">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Apps-system-software-update-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="RIGHT" layoutX="11.0" layoutY="221.0" mnemonicParsing="false" onAction="#Delete" prefHeight="50.0" prefWidth="176.0" text="إزالــــــــة الصنف">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/Bookmark-delete-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="RIGHT" layoutX="9.0" layoutY="290.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="176.0" text="خــــــــــــــــــــروج" textFill="#cd1111">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TextField layoutX="287.0" layoutY="41.0" prefHeight="29.0" prefWidth="212.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="199.0" layoutY="44.0" text="بحث عن صنف ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
