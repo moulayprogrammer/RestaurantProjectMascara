@@ -27,7 +27,7 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </Button>
-      <Button alignment="CENTER" contentDisplay="TOP" layoutX="9.0" layoutY="187.0" mnemonicParsing="false" prefHeight="116.0" prefWidth="155.0" text="الوجبات" textAlignment="CENTER" textOverrun="CLIP">
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="9.0" layoutY="187.0" mnemonicParsing="false" onAction="#food" prefHeight="116.0" prefWidth="155.0" text="الوجبات" textAlignment="CENTER" textOverrun="CLIP">
          <graphic>
             <ImageView fitHeight="100.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
                <image>

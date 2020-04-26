@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="736.0" prefWidth="1415.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FoodCon">
+   <children>
+      <ScrollPane layoutX="200.0" layoutY="62.0" prefHeight="674.0" prefWidth="1207.0">
+         <content>
+            <FlowPane fx:id="flowpane" columnHalignment="CENTER" prefHeight="666.0" prefWidth="1195.0">
+               <children>
+                  <BorderPane style="-fx-background-color: #FFF;">
+                     <top>
+                        <ImageView fitHeight="163.0" fitWidth="157.0" pickOnBounds="true" preserveRatio="true" smooth="false" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/salade-de-poulet-grille-a-la-ranch.jpg" />
+                           </image>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <Label text="Salade variée" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <bottom>
+                        <Label text="200 DA" textFill="#f20606" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Ara Aqeeq Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </bottom>
+                     <FlowPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </BorderPane>
+                  <BorderPane prefHeight="253.0" prefWidth="144.0" style="-fx-background-color: #FFF;">
+                     <top>
+                        <ImageView fitHeight="163.0" fitWidth="157.0" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/cabab.jpg" />
+                           </image>
+                           <viewport>
+                              <Rectangle2D />
+                           </viewport>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <Label text="Salade variée" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <bottom>
+                        <Label text="400 DA" textFill="#e40606" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Ara Aqeeq Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </bottom>
+                     <FlowPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </BorderPane>
+                  <BorderPane prefHeight="253.0" prefWidth="144.0" style="-fx-background-color: #FFF;">
+                     <top>
+                        <ImageView fitHeight="160.0" fitWidth="157.0" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/vv14mKIaIKkLJIW7NJEJUlYpE73FBrkVOFvyUL9j.jpeg" />
+                           </image>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <Label text="Salade variée" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <bottom>
+                        <Label text="250 DA" textFill="#dd0d0d" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Ara Aqeeq Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </bottom>
+                     <FlowPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </BorderPane>
+                  <BorderPane prefHeight="253.0" prefWidth="144.0" style="-fx-background-color: #FFF;">
+                     <top>
+                        <ImageView fitHeight="161.0" fitWidth="148.0" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/FrLj3OXVLXIC2THwneVdFOai9VprslVWVAhuIqlb.jpeg" />
+                           </image>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <Label text="Salade variée" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <bottom>
+                        <Label text="200 DA" textFill="#eb0f0f" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Ara Aqeeq Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </bottom>
+                     <FlowPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </BorderPane>
+                  <BorderPane prefHeight="253.0" prefWidth="144.0" style="-fx-background-color: #FFF;">
+                     <top>
+                        <ImageView fitHeight="161.0" fitWidth="148.0" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/j3LGKpjOwq0fmi4uas4LFMPi7jKLTIHpxSXTYUMY.jpeg" />
+                           </image>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <Label text="Salade variée" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <bottom>
+                        <Label text="450 DA" textFill="#eb0f0f" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Ara Aqeeq Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </bottom>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </BorderPane>
+                  <BorderPane prefHeight="253.0" prefWidth="144.0" style="-fx-background-color: #FFF;">
+                     <top>
+                        <ImageView fitHeight="163.0" fitWidth="157.0" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/OTcDlj6a1ie4Csg5zl8YiJ5LagVYlfHBdHnQuUxp.jpeg" />
+                           </image>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <Label text="Salade variée" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <bottom>
+                        <Label text="450 DA" textFill="#eb0f0f" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Ara Aqeeq Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </bottom>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </BorderPane>
+                  <BorderPane prefHeight="253.0" prefWidth="144.0" style="-fx-background-color: #FFF;">
+                     <top>
+                        <ImageView fitHeight="163.0" fitWidth="157.0" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/Taste-Hungary.jpg" />
+                           </image>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <Label text="Salade variée" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <bottom>
+                        <Label text="450 DA" textFill="#eb0f0f" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Ara Aqeeq Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </bottom>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </BorderPane>
+                  <BorderPane prefHeight="253.0" prefWidth="144.0" style="-fx-background-color: #FFF;">
+                     <top>
+                        <ImageView fitHeight="163.0" fitWidth="157.0" pickOnBounds="true" smooth="false" BorderPane.alignment="CENTER">
+                           <image>
+                              <Image url="@../img/xgHIJgGc5XFexBLoDiYR1HsqbL6DNXZvdLNrthC2.jpeg" />
+                           </image>
+                        </ImageView>
+                     </top>
+                     <center>
+                        <Label text="Salade variée" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <bottom>
+                        <Label text="450 DA" textFill="#eb0f0f" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="Ara Aqeeq Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </bottom>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                     <FlowPane.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </FlowPane.margin>
+                  </BorderPane>
+               </children></FlowPane>
+         </content>
+      </ScrollPane>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="77.0" mnemonicParsing="false" onAction="#AddFood" prefHeight="56.0" prefWidth="171.0" text="إضافة وصفة">
+         <graphic>
+            <ImageView fitHeight="59.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/FAVPNG_food.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" layoutY="302.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="171.0" text="الوجبات المتوفرة ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" layoutY="188.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="171.0" text="صنع منتوج ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="RIGHT" layoutX="8.0" layoutY="411.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="171.0" text="تسجيل الخروج ">
+         <graphic>
+            <ImageView fitHeight="59.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

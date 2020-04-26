@@ -8,14 +8,14 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="628.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginCon">
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="628.0" prefWidth="1152.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CuisineCon">
    <children>
       <Label layoutX="365.0" layoutY="-9.0" text="الطلبـــــــــــــــــــــــــــــــــــــات">
          <font>
             <Font size="54.0" />
          </font>
       </Label>
-      <Button alignment="CENTER" contentDisplay="TOP" layoutX="9.0" layoutY="41.0" mnemonicParsing="false" prefHeight="116.0" prefWidth="155.0" text="الاصنـــــــــــــــــاف" textAlignment="CENTER" textOverrun="CLIP">
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="9.0" layoutY="41.0" mnemonicParsing="false" onAction="#category" prefHeight="116.0" prefWidth="155.0" text="الاصنـــــــــــــــــاف" textAlignment="CENTER" textOverrun="CLIP">
          <graphic>
             <ImageView fitHeight="100.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -27,7 +27,7 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </Button>
-      <Button alignment="CENTER" contentDisplay="TOP" layoutX="9.0" layoutY="187.0" mnemonicParsing="false" prefHeight="116.0" prefWidth="155.0" text="الوجبات" textAlignment="CENTER" textOverrun="CLIP">
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="9.0" layoutY="187.0" mnemonicParsing="false" onAction="#food" prefHeight="116.0" prefWidth="155.0" text="الوجبات" textAlignment="CENTER" textOverrun="CLIP">
          <graphic>
             <ImageView fitHeight="100.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
                <image>

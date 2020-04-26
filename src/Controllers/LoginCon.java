@@ -32,7 +32,6 @@ public class LoginCon {
      for (User a:list){
          map.put(a.getUserName(),a.getType());
      }
-
      String type=map.get(Username.getText());
      String Admin="Admin";
          try {

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="696.0" prefWidth="1194.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddFood">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="1.0" layoutY="298.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="319.0" prefWidth="668.0">
+         <children>
+            <Label text="المكونات">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="668.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="qte1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label text="الكمية " />
+                  <ComboBox fx:id="produit1" prefHeight="37.0" prefWidth="200.0" />
+                  <Label text="المنتوج" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="668.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="qte2">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label text="الكمية " />
+                  <ComboBox fx:id="produit2" prefHeight="37.0" prefWidth="200.0" />
+                  <Label text="المنتوج" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="668.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="qte3">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label text="الكمية " />
+                  <ComboBox fx:id="produit3" prefHeight="37.0" prefWidth="200.0" />
+                  <Label text="المنتوج" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="668.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="qte4">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Label text="الكمية " />
+                  <ComboBox fx:id="produit4" prefHeight="37.0" prefWidth="200.0" />
+                  <Label text="المنتوج" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TextField fx:id="name" layoutX="169.0" layoutY="20.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="category" layoutX="169.0" layoutY="72.0" prefHeight="37.0" prefWidth="200.0" />
+      <Label layoutX="68.0" layoutY="24.0" text="اسم الوجبة ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="77.0" text="الصنف">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="prix" layoutX="169.0" layoutY="129.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="68.0" layoutY="136.0" text="السعر ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" layoutX="661.0" layoutY="100.0" prefHeight="482.0" prefWidth="491.0" spacing="30.0" style="-fx-background-color: #FFF;">
+         <children>
+            <ImageView fitHeight="319.0" fitWidth="524.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/cabab.jpg" />
+               </image>
+            </ImageView>
+            <Label text="صورة الوجبة ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" text="تحميل الصورة ">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <Button layoutX="581.0" layoutY="637.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="229.0" text="الغاء الامر">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="338.0" layoutY="637.0" mnemonicParsing="false" onAction="#insert" prefHeight="47.0" prefWidth="229.0" text="إضافة وجبة ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="desc" layoutX="166.0" layoutY="185.0" prefHeight="106.0" prefWidth="427.0" />
+      <Label layoutX="67.0" layoutY="194.0" text="وصف الوجبة ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

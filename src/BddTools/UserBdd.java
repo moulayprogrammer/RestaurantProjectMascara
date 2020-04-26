@@ -120,8 +120,7 @@ public class UserBdd extends BDD<User> {
 
         return list;
     }
-    public User getUser(Object o){
-        User user1 =  (User)o;
+    public User getUser(User user1){
         User users=new User();
 
 

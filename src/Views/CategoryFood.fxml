@@ -10,12 +10,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="424.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CategoryFoodCon">
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="424.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CategoryFoodCon">
    <children>
-      <TableView fx:id="Tablecategory" layoutX="195.0" layoutY="79.0" onMouseClicked="#getSelectdMeeals" prefHeight="337.0" prefWidth="306.0" tableMenuButtonVisible="true">
+      <TableView fx:id="Tablecategory" layoutX="195.0" layoutY="79.0" onMouseClicked="#getSelectdMeeals" prefHeight="337.0" prefWidth="444.0" tableMenuButtonVisible="true">
         <columns>
-          <TableColumn fx:id="ID" prefWidth="137.0" text="الرقم " />
-          <TableColumn fx:id="nom" prefWidth="219.0" text="اسم الصنف" />
+          <TableColumn fx:id="ID" prefWidth="63.0" text="الرقم " />
+          <TableColumn fx:id="nom" prefWidth="186.0" text="اسم الصنف" />
+            <TableColumn fx:id="type" prefWidth="182.0" text="نوع الصنف " />
         </columns>
       </TableView>
       <Button contentDisplay="RIGHT" layoutX="9.0" layoutY="79.0" mnemonicParsing="false" onAction="#AddCategory" prefHeight="50.0" prefWidth="176.0" text="إضافة صنف جديد ">

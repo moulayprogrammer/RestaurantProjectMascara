@@ -1,6 +1,8 @@
 package Controllers;
 
+import BddTools.CategoryFoodBdd;
 import BddTools.CategoryProduitBdd;
+import Moduls.CategoryFood;
 import Moduls.CategoryProduit;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -22,32 +24,34 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class CategoryFoodCon implements Initializable {
-    public ObservableList<CategoryProduit> data= FXCollections.observableArrayList();
+    public ObservableList<CategoryFood> data= FXCollections.observableArrayList();
     @FXML
-    private TableView<CategoryProduit> Tablecategory;
+    private TableView<CategoryFood> Tablecategory;
     @FXML
-    private TableColumn<CategoryProduit,Integer> ID;
+    private TableColumn<CategoryFood,Integer> ID;
     @FXML
-    private TableColumn<CategoryProduit,String>nom;
+    private TableColumn<CategoryFood,String>nom;
+    @FXML
+    private TableColumn<CategoryFood,String>type;
     public void AddCategory() throws IOException {
         Stage primaryStage=new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../Views/AddCategoryProduit.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../Views/AddCategoryFood.fxml"));
         Scene scene=new Scene(root,414,424);
         primaryStage.setTitle("إضافة صنف جديد ");
         primaryStage.setScene( scene );
         primaryStage.show();
     }
     public void Update() throws IOException {
-        CategoryProduit categoryProduit=new CategoryProduit();
-         categoryProduit=getSelectdMeeals();
-        if(categoryProduit==null)
+        CategoryFood categoryFood=new CategoryFood();
+        categoryFood=getSelectdMeeals();
+        if(categoryFood==null)
             JOptionPane.showMessageDialog(null, "يرجى تحديد المورد المراد تعديل بياناته");
         else {
             Stage primaryStage=new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/UpdateCategoryProduit.fxml"));
             AnchorPane temp = loader.load();
-            UpdateCategoryProduit Controller = loader.getController();
-            Controller.Init(categoryProduit);
+            UpdateCategoryFood Controller = loader.getController();
+            Controller.Init(categoryFood);
             Scene scene=new Scene(temp,414,435);
             primaryStage.setTitle("تعديل بيانات الصنف ");
             primaryStage.setScene( scene );
@@ -55,31 +59,32 @@ public class CategoryFoodCon implements Initializable {
         }
     }
     public void Delete(){
-        CategoryProduit categoryProduit = getSelectdMeeals();
-        CategoryProduitBdd categoryProduitBdd=new CategoryProduitBdd();
-        boolean delete=categoryProduitBdd.delete(categoryProduit);
-        if(categoryProduit!=null){
+        CategoryFood categoryFood = getSelectdMeeals();
+        CategoryFoodBdd categoryFoodBdd=new CategoryFoodBdd();
+        boolean delete=categoryFoodBdd.delete(categoryFood);
+        if(categoryFood!=null){
             if(delete)
                 JOptionPane.showMessageDialog(null, "لقد تم إزالة  الصنف بنجاح");
         }else
             JOptionPane.showMessageDialog(null, "يرجئ تحديد الصنف المراد إزالته");
 
     }
-    public CategoryProduit getSelectdMeeals(){
+    public CategoryFood getSelectdMeeals(){
 
-        CategoryProduit categoryProduit = Tablecategory.getSelectionModel().getSelectedItem();
-        return categoryProduit;
+        CategoryFood categoryFood = Tablecategory.getSelectionModel().getSelectedItem();
+        return categoryFood;
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        CategoryProduitBdd categoryProduitBdd=new CategoryProduitBdd();
+        CategoryFoodBdd categoryFoodBdd=new CategoryFoodBdd();
         ID.setCellValueFactory(new PropertyValueFactory<>("id"));
         nom.setCellValueFactory(new PropertyValueFactory<>("name"));
+        type.setCellValueFactory(new PropertyValueFactory<>("type"));
 
-        display(categoryProduitBdd.getAll());
+        display(categoryFoodBdd.getAll());
     }
-    private void display(ArrayList<CategoryProduit>list){
+    private void display(ArrayList<CategoryFood>list){
         data.addAll(list);
         Tablecategory.getItems().setAll(data);
     }
