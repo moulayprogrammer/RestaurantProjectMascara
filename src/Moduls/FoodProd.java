@@ -3,15 +3,10 @@ package Moduls;
 public class FoodProd {
     private int Qte;
     private int Idfood;
-    private int Idprod;
+    private String produit;
+    private String Unite;
 
     public FoodProd() {
-    }
-
-    public FoodProd(int qte, int idfood, int idprod) {
-        Qte = qte;
-        Idfood = idfood;
-        Idprod = idprod;
     }
 
     public int getQte() {
@@ -30,11 +25,19 @@ public class FoodProd {
         Idfood = idfood;
     }
 
-    public int getIdprod() {
-        return Idprod;
+    public String getProduit() {
+        return produit;
     }
 
-    public void setIdprod(int idprod) {
-        Idprod = idprod;
+    public void setProduit(String produit) {
+        this.produit = produit;
+    }
+
+    public String getUnite() {
+        return Unite;
+    }
+
+    public void setUnite(String unite) {
+        Unite = unite;
     }
 }

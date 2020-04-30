@@ -11,7 +11,7 @@ public class FoodCon {
     public void AddFood() throws IOException {
         Stage primaryStage=new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("../Views/AddFood.fxml "));
-        Scene scene=new Scene(root,1194,696);
+        Scene scene=new Scene(root,1292,706);
         primaryStage.setTitle("إضافة وجبة جديدة  ");
         primaryStage.setScene( scene );
         primaryStage.show();

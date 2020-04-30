@@ -10,6 +10,12 @@ public class Produit {
     private String RecipeUnit;
     private double Coefficient;
 
+    public Produit(int id, String name, double coefficient) {
+        Id = id;
+        Name = name;
+        Coefficient = coefficient;
+    }
+
     public Produit(int id, String name, String category, String purchaseUnit, String recipeUnit, double coefficient) {
         Id = id;
         Name = name;

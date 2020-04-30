@@ -73,15 +73,16 @@
 	-fx-border-width:15;
 }
 .columnTableProduct{
-	-fx-background-color:white;
+
 	-fx-border-style:hidden hidden solid hidden;
 	-fx-border-color:#d7d7d7;
-	-fx-padding:0 0 10 0;
-	-fx-font-size:10;
-	-fx-text-fill: #aaaaaa;
+	-fx-padding:5 0 5 0;
+	-fx-font-size:14;
+	-fx-text-fill: #3e0909;
+	-fx-alignment: center;
 }
 .tableViewProduct{
-	
+
 }
 .buttonSave{
 	-fx-background-color:#42b3c5;

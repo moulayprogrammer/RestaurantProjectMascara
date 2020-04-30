@@ -3,17 +3,13 @@ package Controllers;
 import BddTools.CategoryFoodBdd;
 import BddTools.FoodBdd;
 import BddTools.ProduitBdd;
-import Moduls.CategoryFood;
-import Moduls.CategoryProduit;
-import Moduls.Food;
-import Moduls.Produit;
+import Moduls.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import javax.swing.*;
 import java.net.URL;
@@ -26,25 +22,22 @@ public class AddFood implements Initializable {
     @FXML
     private TextField prix;
     @FXML
-    private TextArea desc;
+    private TextField desc;
     @FXML
-    private ComboBox category;
+    private TextField qte;
     @FXML
-    private TextField qte1;
+    private ChoiceBox category;
     @FXML
-    private TextField qte2;
+    private ListView<String> listViewproduit;
     @FXML
-    private TextField qte3;
+    private TableView<FoodProd> tableviewproduit;
     @FXML
-    private TextField qte4;
+    private TableColumn<FoodProd,Integer> Nameproduit;
     @FXML
-    private ComboBox produit1;
+    private TableColumn<FoodProd,Integer> unité;
     @FXML
-    private ComboBox produit2;
-    @FXML
-    private ComboBox produit3;
-    @FXML
-    private ComboBox produit4;
+    private TableColumn<FoodProd,Integer> qteproduit;
+    ObservableList<Produit> list1= FXCollections.observableArrayList();
 
     public int idcategory(ArrayList<CategoryFood> list){
         int Id=-1;
@@ -84,12 +77,34 @@ public class AddFood implements Initializable {
 
 
     }
+    public String getSelectdProduit(){
+
+        String produit = listViewproduit.getSelectionModel().getSelectedItem();
+        return produit;
+    }
+    public void addproduit(){
+        String unt = null;
+        for (int i=0;i<list1.size();i++){
+            if(list1.get(i).getName()==getSelectdProduit())
+                unt=list1.get(i).getRecipeUnit();
+            
+        }
+         FoodProd foodProd=new FoodProd();
+        foodProd.setProduit(getSelectdProduit());
+        foodProd.setQte(Integer.parseInt(qte.getText()));
+        foodProd.setUnite(unt);
+        tableviewproduit.getItems().add(foodProd);
+
+
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        Nameproduit.setCellValueFactory(new PropertyValueFactory<>("produit"));
+        unité.setCellValueFactory(new PropertyValueFactory<>("Unite"));
+        qteproduit.setCellValueFactory(new PropertyValueFactory<>("Qte"));
         ObservableList<CategoryFood> list= FXCollections.observableArrayList();
         ObservableList<String> Category= FXCollections.observableArrayList();
-        ObservableList<Produit> list1= FXCollections.observableArrayList();
         ObservableList<String> Produit= FXCollections.observableArrayList();
         CategoryFoodBdd categoryFoodBdd=new CategoryFoodBdd();
         list.addAll(categoryFoodBdd.getAll());
@@ -105,10 +120,8 @@ public class AddFood implements Initializable {
             Produit.add(produit.getName());
         }
         category.setItems(Category);
-        produit1.setItems(Produit);
-        produit2.setItems(Produit);
-        produit3.setItems(Produit);
-        produit4.setItems(Produit);
+        listViewproduit.setItems(Produit);
+
 
     }
 }

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class FoodProdBdd extends BDD<FoodProd> {
     @Override
     public boolean insert(FoodProd o) {
-        String sql="insert into Food_Prod(qte, idprod, idfood) VALUES ('"+o.getQte()+"','"+o.getIdprod()+"','"+o.getIdfood()+"')";
+        String sql="insert into Food_Prod(qte, idprod, idfood) VALUES ('"+o.getQte()+"','"+o.getProduit()+"','"+o.getIdfood()+"')";
         try {
             Statement stmt = conn.createStatement();
             stmt.execute(sql);
