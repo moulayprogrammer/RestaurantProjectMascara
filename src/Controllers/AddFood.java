@@ -8,8 +8,11 @@ import Moduls.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.embed.swing.SwingFXUtils;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
@@ -34,15 +37,19 @@ public class AddFood implements Initializable {
     @FXML
     private TextField name;
     @FXML
+    private Button buttonedit;
+    @FXML
+    private ImageView buttondelet;
+    @FXML
     private Text IDFOOD;
     @FXML
     private TextField prix;
     @FXML
-    private TextArea desc;
+    private TextField desc;
     @FXML
     private TextField qte;
     @FXML
-    private ChoiceBox category;
+    private ComboBox category;
     @FXML
     private Button btn;
     @FXML
@@ -58,6 +65,10 @@ public class AddFood implements Initializable {
     private TableColumn<FoodProd,String> unité;
     @FXML
     private TableColumn<FoodProd,Integer> qteproduit;
+    @FXML
+    private TableColumn<FoodProd,Button> culondelete;
+    @FXML
+    private TableColumn<FoodProd,Button> colonedite;
 
     ObservableList<Produit> list1= FXCollections.observableArrayList();
 
@@ -121,6 +132,11 @@ public class AddFood implements Initializable {
         String produit = listViewproduit.getSelectionModel().getSelectedItem();
         return produit;
     }
+    public int getslectetable(){
+        int Id=tableviewproduit.getSelectionModel().getSelectedIndex();
+        System.out.println(Id);
+        return Id;
+    }
     public void addproduit(){
         String unt = null;
         for (int i=0;i<list1.size();i++){
@@ -129,13 +145,35 @@ public class AddFood implements Initializable {
 
         }
          FoodProd foodProd=new FoodProd();
+        ImageView imageView=new ImageView("/img/edit.png");
+        ImageView imageView2=new ImageView("/img/delete.png");
+        imageView.setFitWidth(16);
+        imageView.setFitHeight(16);
+        imageView2.setFitWidth(16);
+        imageView2.setFitHeight(16);
+        Button button1=new Button("",imageView2);
+
+        Button button2=new Button("",imageView);
         foodProd.setProduit(getSelectdProduit());
         foodProd.setQte(Integer.parseInt(qte.getText()));
+        button1.setStyle("-fx-background-color: #ee3d48; -fx-border-radius: 40;");
+        button2.setStyle("-fx-background-color: #42b3c5; -fx-border-radius: 40;");
+        button1.setMnemonicParsing(false);
+
+
+
+        foodProd.setDelete(button1);
+        foodProd.setEdit(button2);
         foodProd.setUnite(unt);
+
         tableviewproduit.getItems().add(foodProd);
     }
-    public BufferedImage ChooseFille(){
 
+    private void deletproduit() {
+        prix.setText("1");
+    }
+
+    public void ChooseFille(){
         FileChooser fileChooser=new FileChooser();
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("All","*.png","*.jpg"));
         File file=fileChooser.showOpenDialog(btn.getScene().getWindow());
@@ -147,17 +185,20 @@ public class AddFood implements Initializable {
                 e.printStackTrace();
             }
         }
-            return image;
+
     }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
         FoodBdd foodBdd=new FoodBdd();
         int k=idfood(foodBdd.getAll());
         IDFOOD.setText(String.valueOf(k));
         Nameproduit.setCellValueFactory(new PropertyValueFactory<>("produit"));
         unité.setCellValueFactory(new PropertyValueFactory<>("Unite"));
         qteproduit.setCellValueFactory(new PropertyValueFactory<>("Qte"));
+        culondelete.setCellValueFactory(new PropertyValueFactory<>("delete"));
+        colonedite.setCellValueFactory(new PropertyValueFactory<>("edit"));
         ObservableList<CategoryFood> list= FXCollections.observableArrayList();
         ObservableList<String> Category= FXCollections.observableArrayList();
         ObservableList<String> Produit= FXCollections.observableArrayList();
