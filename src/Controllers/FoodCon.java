@@ -1,5 +1,6 @@
 package Controllers;
 
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -8,6 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class FoodCon {
+
     public void AddFood() throws IOException {
         Stage primaryStage=new Stage();
         Parent root = FXMLLoader.load(getClass().getResource("../Views/AddFood.fxml "));
