@@ -27,7 +27,7 @@
                   <font>
                      <Font size="15.0" />
                   </font></Text>
-                  <Text fill="#444444" layoutX="719.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="02" AnchorPane.leftAnchor="719.0" AnchorPane.rightAnchor="36.90625">
+                  <Text fx:id="IDFOOD" fill="#444444" layoutX="719.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="02" AnchorPane.leftAnchor="719.0" AnchorPane.rightAnchor="36.90625">
                   <font>
                      <Font size="14.0" />
                   </font></Text>
@@ -159,14 +159,14 @@
                   </font></TextField>
                </children>
             </AnchorPane>
-            <ImageView fitHeight="178.0" fitWidth="303.0" layoutX="33.0" layoutY="74.0" pickOnBounds="true" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="629.0" AnchorPane.topAnchor="74.0">
+            <ImageView fx:id="imgfood" fitHeight="178.0" fitWidth="303.0" layoutX="33.0" layoutY="74.0" pickOnBounds="true" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="629.0" AnchorPane.topAnchor="74.0">
                <image>
                   <Image url="@../img/food.jpg" />
                </image>
             </ImageView>
             <Pane layoutX="21.0" layoutY="60.0" opacity="0.0" prefHeight="213.0" prefWidth="322.0" styleClass="imageFoodPaneBoorder" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="622.0" AnchorPane.topAnchor="70.0" />
             <Pane layoutX="37.0" layoutY="656.0" prefHeight="34.0" prefWidth="95.0" styleClass="paneButtonSave" AnchorPane.leftAnchor="37.0" />
-            <Button layoutX="46.0" layoutY="659.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="78.0" styleClass="buttonSave" text="حفظ" textFill="WHITE" AnchorPane.leftAnchor="46.0">
+            <Button layoutX="46.0" layoutY="659.0" mnemonicParsing="false" onAction="#insertFood" prefHeight="23.0" prefWidth="78.0" styleClass="buttonSave" text="حفظ" textFill="WHITE" AnchorPane.leftAnchor="46.0">
                <font>
                   <Font size="13.0" />
                </font>
@@ -183,7 +183,7 @@
             </font></TextField>
             <ChoiceBox fx:id="category" layoutX="762.0" layoutY="121.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="179.0" styleClass="input-style" AnchorPane.rightAnchor="30.0" />
             <Pane layoutX="350.0" layoutY="149.0" prefHeight="27.0" prefWidth="88.0" styleClass="paneButtonSave" AnchorPane.leftAnchor="356.0" AnchorPane.rightAnchor="527.0" AnchorPane.topAnchor="149.0" />
-            <Button layoutX="357.0" layoutY="150.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="74.0" styleClass="buttonSave" text="صورة" textFill="WHITE" AnchorPane.leftAnchor="363.0" AnchorPane.rightAnchor="534.0">
+            <Button fx:id="btn" layoutX="357.0" layoutY="150.0" mnemonicParsing="false" onAction="#ChooseFille" prefHeight="24.0" prefWidth="74.0" styleClass="buttonSave" text="صورة" textFill="WHITE" AnchorPane.leftAnchor="363.0" AnchorPane.rightAnchor="534.0">
                <font>
                   <Font size="11.0" />
                </font></Button>

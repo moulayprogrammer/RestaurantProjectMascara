@@ -13,7 +13,7 @@ public class FoodBdd extends BDD<Food> {
 
     @Override
     public boolean insert(Food o) {
-        String sql="insert into Food(name, description, price, id_category) values ('"+o.getName()+"','"+o.getDescription()+"','"+o.getPrice()+"','"+o.getIdCategory()+"')";
+        String sql="insert into Food(name, description, price, id_category,image) values ('"+o.getName()+"','"+o.getDescription()+"','"+o.getPrice()+"','"+o.getIdCategory()+"','"+o.getImage()+"')";
         try {
             Statement stmt = conn.createStatement();
             stmt.execute(sql);

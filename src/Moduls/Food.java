@@ -7,6 +7,7 @@ public class Food {
     private String description;
     private float price;
     private int idCategory;
+    private String image;
 
     public Food() {
     }
@@ -70,5 +71,13 @@ public class Food {
 
     public void setIdCategory(int idCategory) {
         this.idCategory = idCategory;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

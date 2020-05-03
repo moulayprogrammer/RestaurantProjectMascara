@@ -149,3 +149,21 @@
 	-fx-border-width:10;
 	-fx-border-color:white;
 }
+.pane-food{
+	-fx-background-color:white;
+}
+.pane-food-border{
+	-fx-border-style:solid;
+	-fx-border-radius:40;
+	-fx-border-width:20;
+	-fx-border-color:white;
+}
+.image-food-pane-border{
+	-fx-border-style:solid solid hidden solid;
+	-fx-border-radius:40;
+	-fx-border-width:20;
+	-fx-border-color:#f8f8f8;
+}
+.button-food{
+	-fx-background-color:white;
+}
