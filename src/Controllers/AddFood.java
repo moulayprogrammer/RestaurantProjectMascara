@@ -38,7 +38,7 @@ public class AddFood implements Initializable {
     @FXML
     private TextField prix;
     @FXML
-    private TextField desc;
+    private TextArea desc;
     @FXML
     private TextField qte;
     @FXML
@@ -73,10 +73,12 @@ public class AddFood implements Initializable {
     }
 
     public int idfood(ArrayList<Food> list){
-        int i=list.size()-1;
-        System.out.println(i);
-       Food food=list.get(i);
-        int Id=food.getId();
+        int Id=0,i=0;
+         i=list.size()-1;
+            Food food=list.get(i);
+             Id=food.getId();
+
+        Id++;
         return Id;
     }
 
@@ -84,15 +86,16 @@ public class AddFood implements Initializable {
     public void insertFood(){
         CategoryFoodBdd categoryFoodBdd=new CategoryFoodBdd();
         int IDcategory=idcategory(categoryFoodBdd.getAll());
+        FoodBdd foodBdd=new FoodBdd();
+        int ID=idfood(foodBdd.getAll());
         Food food=new Food();
+        food.setId(ID);
         food.setName(name.getText());
         food.setIdCategory(IDcategory);
         food.setPrice(Float.parseFloat(prix.getText()));
         food.setDescription(desc.getText());
         food.setImage(name.getText()+".jpg");
-        FoodBdd foodBdd=new FoodBdd();
-        int ID=idfood(foodBdd.getAll());
-        ID++;
+
         for(int i=0;i<tableviewproduit.getItems().size();i++){
             FoodProd foodProd1=new FoodProd();
             FoodProdBdd foodProdBdd=new FoodProdBdd();
@@ -151,7 +154,6 @@ public class AddFood implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         FoodBdd foodBdd=new FoodBdd();
         int k=idfood(foodBdd.getAll());
-        k++;
         IDFOOD.setText(String.valueOf(k));
         Nameproduit.setCellValueFactory(new PropertyValueFactory<>("produit"));
         unité.setCellValueFactory(new PropertyValueFactory<>("Unite"));
