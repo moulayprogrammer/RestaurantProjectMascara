@@ -18,7 +18,7 @@
       <children>
          <ScrollPane layoutX="-7.0" layoutY="131.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="620.0" prefWidth="1007.0" style="-fx-border-color: #f8f8f8; -fx-background-color: #f8f8f8;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-30.0" AnchorPane.topAnchor="130.0">
             <content>
-               <FlowPane prefWidth="1005.0">
+               <FlowPane prefHeight="608.0" prefWidth="1005.0">
                   <children>
                      <Pane>
                         <children>
