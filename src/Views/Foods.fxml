@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="1292.0" styleClass="body" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FoodsCon">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="1292.0" styleClass="body" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddFood">
       <AnchorPane layoutX="4.0" layoutY="-14.0" prefHeight="731.0" prefWidth="939.0" styleClass="contentBoorder" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="296.0" AnchorPane.topAnchor="-14.0" />
    <AnchorPane layoutX="-5.0" layoutY="-45.0" prefWidth="992.0" style="-fx-background-color: #f8f8f8;" styleClass="content" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="326.0" AnchorPane.topAnchor="-45.0">
       <children>
@@ -321,7 +321,7 @@
                <Image url="@../img/availableFood.png" />
             </image>
          </ImageView>
-         <Hyperlink layoutX="81.0" layoutY="281.0" opacity="0.7" styleClass="active" text="إضافة وجبة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
+         <Hyperlink fx:id="addFButton" layoutX="81.0" layoutY="281.0" onAction="#OpenAddFood" opacity="0.7" styleClass="active" text="إضافة وجبة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
             <font>
                <Font size="20.0" />
             </font>
@@ -330,7 +330,7 @@
       </AnchorPane>
    <AnchorPane layoutX="10.0" layoutY="10.0" />
    <stylesheets>
-      <URL value="/css/styles.css" />
+      <URL value="@../IdeaProjects/RestaurantProjectMascara/src/Views/css/styles.css" />
       <URL value="@css/styles.css" />
    </stylesheets>
 </AnchorPane>
