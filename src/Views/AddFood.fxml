@@ -100,6 +100,24 @@
                               <Image url="@../img/search.png" />
                            </image>
                         </ImageView>
+                     <Button layoutX="433.0" layoutY="20.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="16.0" style="-fx-background-color: #42b3c5; -fx-border-radius: 40;">
+                        <graphic>
+                           <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../img/edit.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                     </Button>
+                     <Button layoutX="361.0" layoutY="20.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="16.0" style="-fx-background-color: #ee3d48; -fx-border-radius: 40;">
+                        <graphic>
+                           <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../img/delete.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                     </Button>
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="724.0" layoutY="16.0" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="15.0">
@@ -143,24 +161,6 @@
                                           <Image url="@../img/search.png" />
                                        </image>
                                     </ImageView>
-                                 <Button layoutX="53.0" layoutY="75.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="16.0" style="-fx-background-color: #42b3c5; -fx-border-radius: 40;">
-                                    <graphic>
-                                       <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                                          <image>
-                                             <Image url="@../img/edit.png" />
-                                          </image>
-                                       </ImageView>
-                                    </graphic>
-                                 </Button>
-                                 <Button layoutX="127.0" layoutY="136.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="16.0" style="-fx-background-color: #ee3d48; -fx-border-radius: 40;">
-                                    <graphic>
-                                       <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
-                                          <image>
-                                             <Image url="@../img/delete.png" />
-                                          </image>
-                                       </ImageView>
-                                    </graphic>
-                                 </Button>
                                  </children>
                               </AnchorPane>
                            </children>

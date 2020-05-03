@@ -3,7 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TableColumn?>
@@ -100,6 +100,24 @@
                               <Image url="@../img/search.png" />
                            </image>
                         </ImageView>
+                     <Button layoutX="433.0" layoutY="20.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="16.0" style="-fx-background-color: #42b3c5; -fx-border-radius: 40;">
+                        <graphic>
+                           <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../img/edit.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                     </Button>
+                     <Button layoutX="361.0" layoutY="20.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="16.0" style="-fx-background-color: #ee3d48; -fx-border-radius: 40;">
+                        <graphic>
+                           <ImageView fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@../img/delete.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                     </Button>
                      </children>
                   </AnchorPane>
                   <AnchorPane layoutX="724.0" layoutY="16.0" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="15.0">
@@ -109,22 +127,18 @@
                               <AnchorPane layoutX="-6.0" layoutY="10.0" prefHeight="377.0" prefWidth="230.0" styleClass="quantity-pane-border" />
                               <AnchorPane layoutX="1.0" layoutY="307.0" prefHeight="59.0" prefWidth="217.0" styleClass="quantity-pane">
                                  <children>
-                                    <Text fill="WHITE" layoutX="128.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الكمية المتاحة">
+                                    <Text fill="WHITE" layoutX="125.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="الكمية المتاحة">
                                        <font>
-                                          <Font size="14.0" />
+                                          <Font size="15.0" />
                                        </font>
                                     </Text>
-                                    <Text fill="#e4e4e4" layoutX="96.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100">
+                                    <Text fill="#e4e4e4" layoutX="94.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100">
                                        <font>
-                                          <Font size="14.0" />
+                                          <Font size="16.0" />
                                        </font>
                                     </Text>
                                     <Pane layoutX="10.0" layoutY="39.0" prefHeight="29.0" prefWidth="78.0" styleClass="enquery-button-border" />
-                                    <Button layoutX="15.0" layoutY="41.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="68.0" styleClass="enquery-button" text="إستعلام" textFill="WHITE">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </Button>
+                                    <Button layoutX="15.0" layoutY="41.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="68.0" styleClass="enquery-button" text="إستعلام" textFill="WHITE" />
                                  </children>
                               </AnchorPane>
                               <AnchorPane layoutX="-6.0" layoutY="19.0" prefHeight="323.0" prefWidth="230.0" style="-fx-background-color: white;">
@@ -181,7 +195,7 @@
             <font>
                <Font size="14.0" />
             </font></TextField>
-            <ChoiceBox fx:id="category" layoutX="762.0" layoutY="121.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="32.0" prefWidth="179.0" styleClass="input-style" AnchorPane.rightAnchor="30.0" />
+         <ComboBox layoutX="775.0" layoutY="127.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="24.0" prefWidth="179.0" styleClass="input-style" AnchorPane.rightAnchor="32.0" />
             <Pane layoutX="350.0" layoutY="149.0" prefHeight="27.0" prefWidth="88.0" styleClass="paneButtonSave" AnchorPane.leftAnchor="356.0" AnchorPane.rightAnchor="527.0" AnchorPane.topAnchor="149.0" />
             <Button layoutX="357.0" layoutY="150.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="74.0" styleClass="buttonSave" text="صورة" textFill="WHITE" AnchorPane.leftAnchor="363.0" AnchorPane.rightAnchor="534.0">
                <font>
@@ -253,24 +267,24 @@
                   <Image url="@../img/logout.png" />
                </image>
             </ImageView>
-            <Hyperlink layoutX="129.0" layoutY="225.0" styleClass="active" text="إضافة وجبة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
+            <Hyperlink layoutX="86.0" layoutY="218.0" styleClass="active" text="إضافة وجبة" textFill="WHITE" AnchorPane.rightAnchor="65.0">
                <font>
-                  <Font size="17.0" />
+                  <Font size="20.0" />
                </font>
             </Hyperlink>
-            <Hyperlink layoutX="135.0" layoutY="284.0" opacity="0.7" text="صنع وجبة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
+            <Hyperlink layoutX="98.0" layoutY="277.0" opacity="0.7" text="صنع وجبة" textFill="WHITE" AnchorPane.rightAnchor="65.0">
                <font>
-                  <Font size="17.0" />
+                  <Font size="20.0" />
                </font>
             </Hyperlink>
-            <Hyperlink layoutX="112.0" layoutY="337.0" opacity="0.7" text="الوجبات المتاحة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
+            <Hyperlink layoutX="66.0" layoutY="331.0" opacity="0.7" text="الوجبات المتاحة" textFill="WHITE" AnchorPane.rightAnchor="65.0">
                <font>
-                  <Font size="17.0" />
+                  <Font size="20.0" />
                </font>
             </Hyperlink>
             <Hyperlink layoutX="153.0" layoutY="383.0" opacity="0.7" text="خروج" textFill="WHITE" AnchorPane.rightAnchor="60.0">
                <font>
-                  <Font size="17.0" />
+                  <Font size="20.0" />
                </font>
             </Hyperlink>
          </children>

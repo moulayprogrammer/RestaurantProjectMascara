@@ -20,202 +20,212 @@
             <content>
                <AnchorPane prefHeight="324.0" prefWidth="1027.0" style="-fx-background-color: #f8f8f8;">
                   <children>
-                     <Pane AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+                     <Pane layoutX="723.0" layoutY="60.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
                         <children>
-                           <AnchorPane>
+                           <AnchorPane prefHeight="278.0" prefWidth="177.0">
                               <children>
-                                 <AnchorPane layoutX="10.0" layoutY="21.0" prefHeight="238.0" prefWidth="240.0" styleClass="pane-food-border" />
-                                 <AnchorPane layoutX="22.0" layoutY="41.0" prefHeight="203.0" prefWidth="211.0" styleClass="pane-food">
+                                 <AnchorPane layoutX="10.0" layoutY="21.0" prefHeight="238.0" prefWidth="200.0" styleClass="pane-food-border" />
+                                 <AnchorPane layoutX="22.0" layoutY="41.0" prefHeight="203.0" prefWidth="175.0" styleClass="pane-food">
                                     <children>
-                                       <Separator prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0" />
-                                       <Text fill="#999999" strokeType="OUTSIDE" strokeWidth="0.0" text="Takos Poulet" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="100.0">
+                                       <Separator layoutY="162.0" prefHeight="1.0" prefWidth="141.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="162.0" />
+                                       <Text fill="#999999" strokeType="OUTSIDE" strokeWidth="0.0" text="Takos Poulet" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="100.0">
                                           <font>
                                              <Font size="17.0" />
                                           </font>
                                        </Text>
-                                       <Text fill="#ee4550" strokeType="OUTSIDE" strokeWidth="0.0" text="150 DA" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="130.0">
+                                       <Text fill="#ee4550" strokeType="OUTSIDE" strokeWidth="0.0" text="150 DA" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="130.0">
                                           <font>
                                              <Font size="14.0" />
                                           </font>
                                        </Text>
-                                       <Button layoutX="119.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" styleClass="button-food" text="تعديل" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="20.0">
-                                          <font>
-                                             <Font size="14.0" />
-                                          </font>
-                                       </Button>
-                                       <ImageView fitHeight="14.0" fitWidth="13.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="20.0">
+                                       <Button layoutX="107.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="48.0" styleClass="button-food" text="تعديل" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="20.0" />
+                                       <ImageView fitHeight="14.0" fitWidth="13.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="15.0">
                                           <image>
-                                             <Image url="@../img/edit.png" />
+                                             <Image url="@../img/edit-balck.png" />
                                           </image>
                                        </ImageView>
-                                       <Button layoutX="130.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" styleClass="button-food" text="حذف" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="120.0">
-                                          <font>
-                                             <Font size="14.0" />
-                                          </font>
-                                       </Button>
-                                       <ImageView fitHeight="13.0" fitWidth="31.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="75.0">
+                                       <Button layoutX="130.0" layoutY="187.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="48.0" styleClass="button-food" text="حذف" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="117.0" />
+                                       <ImageView fitHeight="13.0" fitWidth="31.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="55.0">
                                           <image>
                                              <Image url="@../img/close-480.png" />
                                           </image>
                                        </ImageView>
                                     </children>
                                  </AnchorPane>
-                                 <ImageView fitHeight="105.0" fitWidth="240.0" layoutX="9.0" layoutY="21.0" pickOnBounds="true">
+                                 <ImageView fitHeight="105.0" fitWidth="193.0" layoutX="9.0" layoutY="21.0" pickOnBounds="true">
                                     <image>
                                        <Image url="@../img/food.jpg" />
                                     </image>
                                  </ImageView>
-                                 <AnchorPane prefHeight="278.0" prefWidth="257.0" styleClass="image-food-pane-border" />
+                                 <AnchorPane prefHeight="278.0" prefWidth="215.0" styleClass="image-food-pane-border" />
                               </children>
                            </AnchorPane>
                         </children>
                      </Pane>
-                     <Pane layoutX="723.0" layoutY="60.0" AnchorPane.rightAnchor="240.0" AnchorPane.topAnchor="50.0">
+                     <Pane layoutX="822.0" layoutY="60.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="50.0">
                         <children>
-                           <AnchorPane>
+                           <AnchorPane prefHeight="278.0" prefWidth="177.0">
                               <children>
-                                 <AnchorPane layoutX="10.0" layoutY="21.0" prefHeight="238.0" prefWidth="240.0" styleClass="pane-food-border" />
-                                 <AnchorPane layoutX="22.0" layoutY="41.0" prefHeight="203.0" prefWidth="211.0" styleClass="pane-food">
+                                 <AnchorPane layoutX="10.0" layoutY="21.0" prefHeight="238.0" prefWidth="200.0" styleClass="pane-food-border" />
+                                 <AnchorPane layoutX="22.0" layoutY="41.0" prefHeight="203.0" prefWidth="175.0" styleClass="pane-food">
                                     <children>
-                                       <Separator prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0" />
-                                       <Text fill="#999999" strokeType="OUTSIDE" strokeWidth="0.0" text="Takos Poulet" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="100.0">
+                                       <Separator layoutY="162.0" prefHeight="1.0" prefWidth="141.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="162.0" />
+                                       <Text fill="#999999" strokeType="OUTSIDE" strokeWidth="0.0" text="Takos Poulet" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="100.0">
                                           <font>
                                              <Font size="17.0" />
                                           </font>
                                        </Text>
-                                       <Text fill="#ee4550" strokeType="OUTSIDE" strokeWidth="0.0" text="150 DA" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="130.0">
+                                       <Text fill="#ee4550" strokeType="OUTSIDE" strokeWidth="0.0" text="150 DA" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="130.0">
                                           <font>
                                              <Font size="14.0" />
                                           </font>
                                        </Text>
-                                       <Button layoutX="119.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" styleClass="button-food" text="تعديل" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="20.0">
-                                          <font>
-                                             <Font size="14.0" />
-                                          </font>
-                                       </Button>
-                                       <ImageView fitHeight="14.0" fitWidth="13.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="20.0">
+                                       <Button layoutX="107.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="48.0" styleClass="button-food" text="تعديل" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="20.0" />
+                                       <ImageView fitHeight="14.0" fitWidth="13.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="15.0">
                                           <image>
-                                             <Image url="@../img/edit.png" />
+                                             <Image url="@../img/edit-balck.png" />
                                           </image>
                                        </ImageView>
-                                       <Button layoutX="130.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" styleClass="button-food" text="حذف" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="120.0">
-                                          <font>
-                                             <Font size="14.0" />
-                                          </font>
-                                       </Button>
-                                       <ImageView fitHeight="13.0" fitWidth="31.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="75.0">
+                                       <Button layoutX="130.0" layoutY="187.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="48.0" styleClass="button-food" text="حذف" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="117.0" />
+                                       <ImageView fitHeight="13.0" fitWidth="31.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="55.0">
                                           <image>
                                              <Image url="@../img/close-480.png" />
                                           </image>
                                        </ImageView>
                                     </children>
                                  </AnchorPane>
-                                 <ImageView fitHeight="105.0" fitWidth="240.0" layoutX="9.0" layoutY="21.0" pickOnBounds="true">
+                                 <ImageView fitHeight="105.0" fitWidth="193.0" layoutX="9.0" layoutY="21.0" pickOnBounds="true">
                                     <image>
                                        <Image url="@../img/food.jpg" />
                                     </image>
                                  </ImageView>
-                                 <AnchorPane prefHeight="278.0" prefWidth="257.0" styleClass="image-food-pane-border" />
+                                 <AnchorPane prefHeight="278.0" prefWidth="215.0" styleClass="image-food-pane-border" />
                               </children>
                            </AnchorPane>
                         </children>
                      </Pane>
-                     <Pane layoutX="403.0" layoutY="60.0" AnchorPane.rightAnchor="510.0" AnchorPane.topAnchor="50.0">
+                     <Pane layoutX="602.0" layoutY="60.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="50.0">
                         <children>
-                           <AnchorPane>
+                           <AnchorPane prefHeight="278.0" prefWidth="177.0">
                               <children>
-                                 <AnchorPane layoutX="10.0" layoutY="21.0" prefHeight="238.0" prefWidth="240.0" styleClass="pane-food-border" />
-                                 <AnchorPane layoutX="22.0" layoutY="41.0" prefHeight="203.0" prefWidth="211.0" styleClass="pane-food">
+                                 <AnchorPane layoutX="10.0" layoutY="21.0" prefHeight="238.0" prefWidth="200.0" styleClass="pane-food-border" />
+                                 <AnchorPane layoutX="22.0" layoutY="41.0" prefHeight="203.0" prefWidth="175.0" styleClass="pane-food">
                                     <children>
-                                       <Separator prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0" />
-                                       <Text fill="#999999" strokeType="OUTSIDE" strokeWidth="0.0" text="Takos Poulet" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="100.0">
+                                       <Separator layoutY="162.0" prefHeight="1.0" prefWidth="141.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="162.0" />
+                                       <Text fill="#999999" strokeType="OUTSIDE" strokeWidth="0.0" text="Takos Poulet" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="100.0">
                                           <font>
                                              <Font size="17.0" />
                                           </font>
                                        </Text>
-                                       <Text fill="#ee4550" strokeType="OUTSIDE" strokeWidth="0.0" text="150 DA" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="130.0">
+                                       <Text fill="#ee4550" strokeType="OUTSIDE" strokeWidth="0.0" text="150 DA" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="130.0">
                                           <font>
                                              <Font size="14.0" />
                                           </font>
                                        </Text>
-                                       <Button layoutX="119.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" styleClass="button-food" text="تعديل" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="20.0">
-                                          <font>
-                                             <Font size="14.0" />
-                                          </font>
-                                       </Button>
-                                       <ImageView fitHeight="14.0" fitWidth="13.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="20.0">
+                                       <Button layoutX="107.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="48.0" styleClass="button-food" text="تعديل" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="20.0" />
+                                       <ImageView fitHeight="14.0" fitWidth="13.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="15.0">
                                           <image>
-                                             <Image url="@../img/edit.png" />
+                                             <Image url="@../img/edit-balck.png" />
                                           </image>
                                        </ImageView>
-                                       <Button layoutX="130.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" styleClass="button-food" text="حذف" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="120.0">
-                                          <font>
-                                             <Font size="14.0" />
-                                          </font>
-                                       </Button>
-                                       <ImageView fitHeight="13.0" fitWidth="31.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="75.0">
+                                       <Button layoutX="130.0" layoutY="187.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="48.0" styleClass="button-food" text="حذف" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="117.0" />
+                                       <ImageView fitHeight="13.0" fitWidth="31.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="55.0">
                                           <image>
                                              <Image url="@../img/close-480.png" />
                                           </image>
                                        </ImageView>
                                     </children>
                                  </AnchorPane>
-                                 <ImageView fitHeight="105.0" fitWidth="240.0" layoutX="9.0" layoutY="21.0" pickOnBounds="true">
+                                 <ImageView fitHeight="105.0" fitWidth="193.0" layoutX="9.0" layoutY="21.0" pickOnBounds="true">
                                     <image>
                                        <Image url="@../img/food.jpg" />
                                     </image>
                                  </ImageView>
-                                 <AnchorPane prefHeight="278.0" prefWidth="257.0" styleClass="image-food-pane-border" />
+                                 <AnchorPane prefHeight="278.0" prefWidth="215.0" styleClass="image-food-pane-border" />
                               </children>
                            </AnchorPane>
                         </children>
                      </Pane>
-                     <Pane layoutX="247.0" layoutY="60.0" AnchorPane.rightAnchor="770.0" AnchorPane.topAnchor="50.0">
+                     <Pane layoutX="422.0" layoutY="60.0" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="50.0">
                         <children>
-                           <AnchorPane>
+                           <AnchorPane prefHeight="278.0" prefWidth="177.0">
                               <children>
-                                 <AnchorPane layoutX="10.0" layoutY="21.0" prefHeight="238.0" prefWidth="240.0" styleClass="pane-food-border" />
-                                 <AnchorPane layoutX="22.0" layoutY="41.0" prefHeight="203.0" prefWidth="211.0" styleClass="pane-food">
+                                 <AnchorPane layoutX="10.0" layoutY="21.0" prefHeight="238.0" prefWidth="200.0" styleClass="pane-food-border" />
+                                 <AnchorPane layoutX="22.0" layoutY="41.0" prefHeight="203.0" prefWidth="175.0" styleClass="pane-food">
                                     <children>
-                                       <Separator prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="160.0" />
-                                       <Text fill="#999999" strokeType="OUTSIDE" strokeWidth="0.0" text="Takos Poulet" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="55.0" AnchorPane.topAnchor="100.0">
+                                       <Separator layoutY="162.0" prefHeight="1.0" prefWidth="141.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="162.0" />
+                                       <Text fill="#999999" strokeType="OUTSIDE" strokeWidth="0.0" text="Takos Poulet" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="100.0">
                                           <font>
                                              <Font size="17.0" />
                                           </font>
                                        </Text>
-                                       <Text fill="#ee4550" strokeType="OUTSIDE" strokeWidth="0.0" text="150 DA" AnchorPane.leftAnchor="85.0" AnchorPane.topAnchor="130.0">
+                                       <Text fill="#ee4550" strokeType="OUTSIDE" strokeWidth="0.0" text="150 DA" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="130.0">
                                           <font>
                                              <Font size="14.0" />
                                           </font>
                                        </Text>
-                                       <Button layoutX="119.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" styleClass="button-food" text="تعديل" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="20.0">
-                                          <font>
-                                             <Font size="14.0" />
-                                          </font>
-                                       </Button>
-                                       <ImageView fitHeight="14.0" fitWidth="13.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="20.0">
+                                       <Button layoutX="107.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="48.0" styleClass="button-food" text="تعديل" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="20.0" />
+                                       <ImageView fitHeight="14.0" fitWidth="13.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="15.0">
                                           <image>
-                                             <Image url="@../img/edit.png" />
+                                             <Image url="@../img/edit-balck.png" />
                                           </image>
                                        </ImageView>
-                                       <Button layoutX="130.0" layoutY="187.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" styleClass="button-food" text="حذف" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="120.0">
-                                          <font>
-                                             <Font size="14.0" />
-                                          </font>
-                                       </Button>
-                                       <ImageView fitHeight="13.0" fitWidth="31.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="75.0">
+                                       <Button layoutX="130.0" layoutY="187.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="48.0" styleClass="button-food" text="حذف" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="117.0" />
+                                       <ImageView fitHeight="13.0" fitWidth="31.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="55.0">
                                           <image>
                                              <Image url="@../img/close-480.png" />
                                           </image>
                                        </ImageView>
                                     </children>
                                  </AnchorPane>
-                                 <ImageView fitHeight="105.0" fitWidth="240.0" layoutX="9.0" layoutY="21.0" pickOnBounds="true">
+                                 <ImageView fitHeight="105.0" fitWidth="193.0" layoutX="9.0" layoutY="21.0" pickOnBounds="true">
                                     <image>
                                        <Image url="@../img/food.jpg" />
                                     </image>
                                  </ImageView>
-                                 <AnchorPane prefHeight="278.0" prefWidth="257.0" styleClass="image-food-pane-border" />
+                                 <AnchorPane prefHeight="278.0" prefWidth="215.0" styleClass="image-food-pane-border" />
+                              </children>
+                           </AnchorPane>
+                        </children>
+                     </Pane>
+                     <Pane layoutX="222.0" layoutY="60.0" AnchorPane.rightAnchor="800.0" AnchorPane.topAnchor="50.0">
+                        <children>
+                           <AnchorPane prefHeight="278.0" prefWidth="177.0">
+                              <children>
+                                 <AnchorPane layoutX="10.0" layoutY="21.0" prefHeight="238.0" prefWidth="200.0" styleClass="pane-food-border" />
+                                 <AnchorPane layoutX="22.0" layoutY="41.0" prefHeight="203.0" prefWidth="175.0" styleClass="pane-food">
+                                    <children>
+                                       <Separator layoutY="162.0" prefHeight="1.0" prefWidth="141.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="162.0" />
+                                       <Text fill="#999999" strokeType="OUTSIDE" strokeWidth="0.0" text="Takos Poulet" AnchorPane.leftAnchor="40.0" AnchorPane.topAnchor="100.0">
+                                          <font>
+                                             <Font size="17.0" />
+                                          </font>
+                                       </Text>
+                                       <Text fill="#ee4550" strokeType="OUTSIDE" strokeWidth="0.0" text="150 DA" AnchorPane.leftAnchor="60.0" AnchorPane.topAnchor="130.0">
+                                          <font>
+                                             <Font size="14.0" />
+                                          </font>
+                                       </Text>
+                                       <Button layoutX="107.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="48.0" styleClass="button-food" text="تعديل" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="20.0" />
+                                       <ImageView fitHeight="14.0" fitWidth="13.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="15.0">
+                                          <image>
+                                             <Image url="@../img/edit-balck.png" />
+                                          </image>
+                                       </ImageView>
+                                       <Button layoutX="130.0" layoutY="187.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="48.0" styleClass="button-food" text="حذف" textFill="#979797" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="117.0" />
+                                       <ImageView fitHeight="13.0" fitWidth="31.0" opacity="0.65" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="55.0">
+                                          <image>
+                                             <Image url="@../img/close-480.png" />
+                                          </image>
+                                       </ImageView>
+                                    </children>
+                                 </AnchorPane>
+                                 <ImageView fitHeight="105.0" fitWidth="193.0" layoutX="9.0" layoutY="21.0" pickOnBounds="true">
+                                    <image>
+                                       <Image url="@../img/food.jpg" />
+                                    </image>
+                                 </ImageView>
+                                 <AnchorPane prefHeight="278.0" prefWidth="215.0" styleClass="image-food-pane-border" />
                               </children>
                            </AnchorPane>
                         </children>
@@ -272,22 +282,22 @@
             </ImageView>
             <Hyperlink layoutX="129.0" layoutY="225.0" styleClass="active" text="الرئيسية" textFill="WHITE" AnchorPane.rightAnchor="60.0">
                <font>
-                  <Font size="17.0" />
+                  <Font size="20.0" />
                </font>
             </Hyperlink>
-            <Hyperlink layoutX="85.0" layoutY="350.0" opacity="0.7" text="صنع وجبة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
+            <Hyperlink layoutX="102.0" layoutY="348.0" opacity="0.7" text="صنع وجبة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
                <font>
-                  <Font size="17.0" />
+                  <Font size="20.0" />
                </font>
             </Hyperlink>
-            <Hyperlink layoutX="82.0" layoutY="413.0" opacity="0.7" text="الوجبات المتاحة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
+            <Hyperlink layoutX="57.0" layoutY="406.0" opacity="0.7" text="الوجبات المتاحة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
                <font>
-                  <Font size="17.0" />
+                  <Font size="20.0" />
                </font>
             </Hyperlink>
-            <Hyperlink layoutX="153.0" layoutY="459.0" opacity="0.7" text="خروج" textFill="WHITE" AnchorPane.rightAnchor="60.0">
+            <Hyperlink layoutX="147.0" layoutY="461.0" opacity="0.7" text="خروج" textFill="WHITE" AnchorPane.rightAnchor="60.0">
                <font>
-                  <Font size="17.0" />
+                  <Font size="20.0" />
                </font>
             </Hyperlink>
          <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="211.0" layoutY="286.0" opacity="0.7" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="20.0">
@@ -295,9 +305,9 @@
                <Image url="@../img/availableFood.png" />
             </image>
          </ImageView>
-         <Hyperlink layoutX="103.0" layoutY="287.0" opacity="0.7" styleClass="active" text="إضافة وجبة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
+         <Hyperlink layoutX="81.0" layoutY="281.0" opacity="0.7" styleClass="active" text="إضافة وجبة" textFill="WHITE" AnchorPane.rightAnchor="60.0">
             <font>
-               <Font size="17.0" />
+               <Font size="20.0" />
             </font>
          </Hyperlink>
          </children>
