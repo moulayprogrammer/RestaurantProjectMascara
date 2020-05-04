@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -13,23 +14,29 @@ public class FoodsCon {
 
     @FXML
     Button addFButton;
-    Stage stage = null;
+    @FXML
+    AnchorPane foods;
+    @FXML
+    AnchorPane paneFoods;
+    @FXML
+    AnchorPane paneAddFood;
+    @FXML
+    AnchorPane addFood;
+
     @FXML
     public void OpenAddFood(){
-        Stage primaryStage=new Stage();
-        Parent root = null;
-        try {
-            stage = (Stage) addFButton.getScene().getWindow();
-            stage.close();
-            root = FXMLLoader.load(getClass().getResource("../Views/AddFood.fxml "));
-            Scene scene=new Scene(root,1292,706);
-            primaryStage.setTitle("إضافة وجبة جديدة  ");
-            primaryStage.setScene( scene );
-            primaryStage.setMaximized(true);
-            primaryStage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+        foods.setVisible(false);
+        paneFoods.setVisible(false);
+        addFood.setVisible(true);
+        paneAddFood.setVisible(true);
     }
+
+    @FXML
+    public void OpenFoodPage() {
+        foods.setVisible(true);
+        paneFoods.setVisible(true);
+        addFood.setVisible(false);
+        paneAddFood.setVisible(false);
+    }
+
 }
