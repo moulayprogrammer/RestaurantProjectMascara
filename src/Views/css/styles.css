@@ -202,3 +202,12 @@
 	-fx-background-radius: 2em;
 
 }
+.menu-bar Hyperlink{
+	-fx-underline:false;
+}
+.menu-bar .active{
+	-fx-opacity:1;
+}
+.menu-bar Hyperlink:hover{
+	-fx-opacity:1;
+}
