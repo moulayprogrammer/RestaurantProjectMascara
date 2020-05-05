@@ -35,9 +35,7 @@ import java.util.ResourceBundle;
 
 public class FoodsCon implements Initializable {
     @FXML
-    Hyperlink addFButton;
-    @FXML
-    Hyperlink foodpane;
+    AnchorPane foodpane;
     @FXML
     AnchorPane paneFoods;
     @FXML
@@ -86,11 +84,11 @@ public class FoodsCon implements Initializable {
 
     ObservableList<Produit> list1= FXCollections.observableArrayList();
     public void OpenAddFood(){
-        foodpane.setVisible(false);
+        addFood.setVisible(true);
         paneAddFood.setVisible(true);
+        foodpane.setVisible(false);
         paneMakeProduct.setVisible(false);
         paneFoods.setVisible(false);
-        addFood.setVisible(true);
         makeProducts.setVisible(false);
 
     }
@@ -98,21 +96,22 @@ public class FoodsCon implements Initializable {
     @FXML
     public void OpenFoodPage() {
         foodpane.setVisible(true);
+        paneFoods.setVisible(true);
         paneAddFood.setVisible(false);
         paneMakeProduct.setVisible(false);
-        paneFoods.setVisible(true);
         addFood.setVisible(false);
         paneMakeProduct.setVisible(false);
     }
 
     @FXML
     public void openMakeProduct() {
-        foodpane.setVisible(false);
         paneMakeProduct.setVisible(true);
+        makeProducts.setVisible(true);
+        foodpane.setVisible(false);
         paneAddFood.setVisible(false);
         paneFoods.setVisible(false);
         addFood.setVisible(false);
-        paneMakeProduct.setVisible(true);
+
     }
 
     public int idcategory(ArrayList<CategoryFood> list){
