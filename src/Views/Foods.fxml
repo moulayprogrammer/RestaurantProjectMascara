@@ -462,12 +462,11 @@
                </TextField>
             </children>
          </AnchorPane>
-         <ImageView fx:id="imgfood" fitHeight="178.0" fitWidth="303.0" layoutX="33.0" layoutY="74.0" pickOnBounds="true" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="629.0" AnchorPane.topAnchor="74.0">
+         <ImageView fx:id="imgfood" fitHeight="178.0" fitWidth="277.0" layoutX="33.0" layoutY="74.0" pickOnBounds="true" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="680.0" AnchorPane.topAnchor="74.0">
             <image>
-               <Image url="@../img/food.jpg" />
+               <Image url="@../img/default-food-image.jpg" />
             </image>
          </ImageView>
-         <Pane layoutX="21.0" layoutY="60.0" opacity="0.0" prefHeight="213.0" prefWidth="322.0" styleClass="imageFoodPaneBoorder" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="622.0" AnchorPane.topAnchor="70.0" />
          <Pane layoutX="37.0" layoutY="656.0" prefHeight="34.0" prefWidth="95.0" styleClass="paneButtonSave" AnchorPane.leftAnchor="37.0" />
          <Button layoutX="46.0" layoutY="659.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="78.0" styleClass="buttonSave" text="حفظ" textFill="WHITE" AnchorPane.leftAnchor="46.0">
             <font>
