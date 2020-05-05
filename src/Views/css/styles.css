@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'HS dream';
-    src: url('../fonts/HSDream-Regular.otf');
+	font-family: 'HS dream';
+	src: url('../fonts/HSDream-Regular.otf');
 }
 
 .body{
@@ -73,7 +73,7 @@
 	-fx-border-width:15;
 }
 .columnTableProduct{
-	
+
 	-fx-border-style:hidden hidden solid hidden;
 	-fx-border-color:white;
 	-fx-padding:5 0 5 0;
@@ -87,7 +87,7 @@
 .buttonSave{
 	-fx-background-color:#42b3c5;
 	-fx-text-fill:white;
-	
+
 }
 .paneButtonSave{
 	-fx-border-style:solid;
@@ -166,7 +166,7 @@
 }
 .button-food{
 	-fx-background-color:white;
-	
+
 }
 /* The main scrollbar **track** CSS class  */
 .scrollPane .scroll-bar:horizontal .track,
@@ -179,26 +179,26 @@
 /* The increment and decrement button CSS class of scrollbar */
 .scrollPane .scroll-bar:horizontal .increment-button ,
 .scrollPane .scroll-bar:horizontal .decrement-button {
-    -fx-background-color:transparent;
+	-fx-background-color:transparent;
 	-fx-background-radius: 0em;
 	-fx-padding:0 0 10 0;
- 
+
 }
 /* The increment and decrement button CSS class of scrollbar */
- 
+
 .scrollPane .scroll-bar:vertical .increment-button ,
 .scrollPane .scroll-bar:vertical .decrement-button {
- 
-    -fx-background-color:transparent;
+
+	-fx-background-color:transparent;
 	-fx-background-radius: 0em;
 	-fx-padding:0 5 0 0;
- 
+
 }
 /* The main scrollbar **thumb** CSS class which we drag every time (movable) */
 .scrollPane .scroll-bar:horizontal .thumb,
 .scrollPane .scroll-bar:vertical .thumb {
-    -fx-background-color:derive(black,90%);
+	-fx-background-color:#ee3d48;
 	-fx-background-insets: 2, 0, 0;
 	-fx-background-radius: 2em;
- 
+
 }
