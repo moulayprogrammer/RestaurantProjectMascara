@@ -22,11 +22,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="1292.0" styleClass="body" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FoodsCon">
    <AnchorPane fx:id="paneFoods" layoutX="4.0" layoutY="-14.0" prefHeight="731.0" prefWidth="999.0" styleClass="contentBoorder" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="-14.0" />
-   <AnchorPane fx:id="foodpane" layoutX="-5.0" layoutY="-45.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="751.0" prefWidth="990.0" style="-fx-background-color: #f8f8f8;" styleClass="content" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="-45.0">
+   <AnchorPane fx:id="foodpane" layoutX="-5.0" layoutY="-45.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="751.0" prefWidth="990.0" style="-fx-background-color: #f8f8f8;" styleClass="content" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="-45.0">
       <children>
          <ScrollPane hbarPolicy="NEVER" prefWidth="964.0" style="-fx-border-color: #f8f8f8; -fx-background-color: #f8f8f8;" styleClass="scrollPane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="45.0">
             <content>
-               <FlowPane columnHalignment="RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="1000.0" prefWidth="1048.0" style="-fx-background-color: #f8f8f8;">
+               <FlowPane fx:id="flowpane" columnHalignment="RIGHT" nodeOrientation="RIGHT_TO_LEFT" prefHeight="1000.0" prefWidth="1048.0" style="-fx-background-color: #f8f8f8;">
                   <children>
                      <AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="70.0" prefWidth="951.0">
                         <children>
@@ -297,7 +297,7 @@
       </children>
    </AnchorPane>
    <AnchorPane fx:id="paneAddFood" layoutX="-2.0" layoutY="-15.0" prefHeight="742.0" prefWidth="999.0" styleClass="contentBoorder" visible="false" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="-14.0" />
-   <AnchorPane fx:id="addFood" layoutX="5.0" layoutY="-35.0" prefHeight="751.0" prefWidth="990.0" styleClass="content" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="-45.0">
+   <AnchorPane fx:id="addFood" layoutX="5.0" layoutY="-35.0" prefHeight="751.0" prefWidth="990.0" styleClass="content" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-5.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="-45.0">
       <children>
          <AnchorPane layoutX="163.0" layoutY="654.0" prefHeight="83.0" prefWidth="802.0" styleClass="footerBoorder" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="163.0" AnchorPane.rightAnchor="0.0" />
          <AnchorPane layoutX="180.0" layoutY="667.0" prefHeight="59.0" prefWidth="765.0" styleClass="footer" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="667.0">
@@ -468,7 +468,7 @@
             </image>
          </ImageView>
          <Pane layoutX="37.0" layoutY="656.0" prefHeight="34.0" prefWidth="95.0" styleClass="paneButtonSave" AnchorPane.leftAnchor="37.0" />
-         <Button layoutX="46.0" layoutY="659.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="78.0" styleClass="buttonSave" text="حفظ" textFill="WHITE" AnchorPane.leftAnchor="46.0">
+         <Button layoutX="46.0" layoutY="659.0" mnemonicParsing="false" onAction="#insertFood" prefHeight="23.0" prefWidth="78.0" styleClass="buttonSave" text="حفظ" textFill="WHITE" AnchorPane.leftAnchor="46.0">
             <font>
                <Font size="13.0" />
             </font>

@@ -20,6 +20,8 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.FlowPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -34,6 +36,8 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class FoodsCon implements Initializable {
+    @FXML
+    FlowPane flowpane;
     @FXML
     AnchorPane foodpane;
     @FXML
@@ -257,11 +261,44 @@ public class FoodsCon implements Initializable {
         }
         category.setItems(Category);
         listViewproduit.setItems(Produit);
+        for(int i=0;i<10;i++){
+        Pane pane1=new Pane();
+        AnchorPane anchorPane=new AnchorPane();
+            anchorPane.setPrefWidth(278);
+            anchorPane.setPrefHeight(177);
+        pane1.getChildren().addAll(anchorPane);
+        AnchorPane anchorPane1=new AnchorPane();
+        anchorPane1.setPrefWidth(148);
+        anchorPane1.setPrefHeight(238);
+        anchorPane1.setStyle("-fx-border-style:solid;-fx-border-radius:40;-fx-border-width:20;-fx-border-color:white;");
+        AnchorPane anchorPane2=new AnchorPane();
+        anchorPane2.setPrefHeight(203);
+        anchorPane2.setPrefWidth(131);
+        anchorPane2.setStyle("-fx-background-color:white;");
+        AnchorPane anchorPane3=new AnchorPane();
+            anchorPane3.setPrefHeight(278);
+            anchorPane3.setPrefWidth(169);
+        anchorPane3.setStyle("-fx-border-style:solid solid hidden solid;-fx-border-radius:40;-fx-border-width:20;-fx-border-color:#f8f8f8;");
+        ImageView imageView=new ImageView("img/food.jpg");
+            imageView.setFitHeight(105);
+            imageView.setFitWidth(138);
+            imageView.setPickOnBounds(true);
+        anchorPane.getChildren().addAll(anchorPane1,anchorPane2,imageView,anchorPane3);
+        Separator separator=new Separator();
+            separator.setPrefHeight(4);
+            separator.setPrefHeight(138);
 
-
+        Text text=new Text();
+        Text text2=new Text();
+      //  ImageView imageView1=new ImageView("img/close-480.png");
+        Button button=new Button("حذف");
+            button.setStyle("-fx-background-color:white;");
+       // ImageView imageView2=new ImageView("img/edit-balck.png");
+        Button button1=new Button("تعديل");
+            button1.setStyle("-fx-background-color:white;");
+        anchorPane2.getChildren().addAll(separator,text,text2,button,button1);
+        flowpane.getChildren().addAll(pane1);
+        }
     }
-
-
-
 }
 
