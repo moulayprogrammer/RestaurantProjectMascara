@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXToggleButton?>
 <?import java.net.URL?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
@@ -714,16 +715,16 @@
             <children>
                <AnchorPane layoutX="40.0" layoutY="72.0" prefHeight="509.0" prefWidth="917.0" styleClass="pane-table" AnchorPane.bottomAnchor="-5.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="33.0">
                   <children>
-                     <TableView fx:id="tableviewfood" layoutX="7.0" layoutY="82.0" prefHeight="332.0" prefWidth="677.0" style="-fx-border-style: solid; -fx-border-color: white;" styleClass="tableViewProduct" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="82.0">
+                     <TableView fx:id="tableviewfood" fixedCellSize="0.0" layoutX="83.0" layoutY="82.0" prefHeight="332.0" prefWidth="763.0" style="-fx-border-style: solid; -fx-border-color: white;" styleClass="tableViewProduct" AnchorPane.bottomAnchor="95.0" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="82.0">
                         <columns>
                            <TableColumn editable="false" minWidth="0.0" prefWidth="79.0" resizable="false" sortable="false" styleClass="columnTableProduct">
                               <graphic>
-                                 <CheckBox mnemonicParsing="false" prefHeight="15.0" prefWidth="0.0" />
+                                 <JFXToggleButton size="6.0" text="إختر" toggleColor="#ee3d48" toggleLineColor="#ee7a82" />
                               </graphic>
                            </TableColumn>
                            <TableColumn fx:id="categoryfood" prefWidth="77.0" styleClass="columnTableProduct" text="الصنف" />
                            <TableColumn fx:id="namefood" minWidth="0.0" prefWidth="63.0" styleClass="columnTableProduct" text="الإسم" />
-                           <TableColumn fx:id="Imagefood" prefWidth="394.0" resizable="false" styleClass="columnTableProduct" text="صورة الوجبة" />
+                           <TableColumn fx:id="Imagefood" prefWidth="373.0" resizable="false" styleClass="columnTableProduct" text="صورة الوجبة" />
                         </columns>
                         <columnResizePolicy>
                            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
