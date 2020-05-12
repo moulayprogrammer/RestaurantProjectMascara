@@ -1,5 +1,8 @@
 package Moduls;
 
+
+import javafx.scene.image.ImageView;
+
 public class Food {
 
     private int id;
@@ -7,7 +10,7 @@ public class Food {
     private String description;
     private float price;
     private int idCategory;
-    private String image;
+    private ImageView image;
 
     public Food() {
     }
@@ -73,11 +76,11 @@ public class Food {
         this.idCategory = idCategory;
     }
 
-    public String getImage() {
+    public ImageView getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(ImageView image) {
         this.image = image;
     }
 }

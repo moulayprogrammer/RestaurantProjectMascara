@@ -18,6 +18,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.FlowPane;
@@ -47,15 +48,15 @@ public class FoodsCon implements Initializable {
     @FXML
     AnchorPane addFood;
     @FXML
+    AnchorPane availableFoods;
+    @FXML
     AnchorPane paneMakeProduct;
     @FXML
     AnchorPane makeProducts;
     @FXML
+    Hyperlink availableFoodsButton;
+    @FXML
     private TextField name;
-    @FXML
-    private Button buttonedit;
-    @FXML
-    private ImageView buttondelet;
     @FXML
     private Text IDFOOD;
     @FXML
@@ -85,36 +86,48 @@ public class FoodsCon implements Initializable {
     private TableColumn<FoodProd,Button> culondelete;
     @FXML
     private TableColumn<FoodProd,Button> colonedite;
+    @FXML
+    private  TableView<Food> tableviewfood;
+    @FXML
+    private TableColumn<Food,ImageView> Imagefood;
+    @FXML
+    private TableColumn<Food,String> namefood;
+    @FXML
+    private TableColumn<Food,String> categoryfood;
+
 
     ObservableList<Produit> list1= FXCollections.observableArrayList();
+    ObservableList<Food> listfood= FXCollections.observableArrayList();
     public void OpenAddFood(){
         addFood.setVisible(true);
-        paneAddFood.setVisible(true);
         foodpane.setVisible(false);
-        paneMakeProduct.setVisible(false);
-        paneFoods.setVisible(false);
         makeProducts.setVisible(false);
-
+        availableFoods.setVisible(false);
     }
 
     @FXML
     public void OpenFoodPage() {
         foodpane.setVisible(true);
-        paneFoods.setVisible(true);
-        paneAddFood.setVisible(false);
-        paneMakeProduct.setVisible(false);
         addFood.setVisible(false);
-        paneMakeProduct.setVisible(false);
+        availableFoods.setVisible(false);
+        makeProducts.setVisible(false);
     }
 
     @FXML
     public void openMakeProduct() {
-        paneMakeProduct.setVisible(true);
         makeProducts.setVisible(true);
         foodpane.setVisible(false);
-        paneAddFood.setVisible(false);
-        paneFoods.setVisible(false);
         addFood.setVisible(false);
+        availableFoods.setVisible(false);
+
+    }
+    @FXML
+    public void openAvailableFoods(){
+        makeProducts.setVisible(false);
+        foodpane.setVisible(false);
+        availableFoods.setVisible(true);
+        addFood.setVisible(false);
+        availableFoodsButton.getStyleClass().add("active");
 
     }
 
@@ -151,7 +164,7 @@ public class FoodsCon implements Initializable {
         food.setIdCategory(IDcategory);
         food.setPrice(Float.parseFloat(prix.getText()));
         food.setDescription(desc.getText());
-        food.setImage(name.getText()+".jpg");
+      //  food.setImage(name.getText()+".jpg");
 
         for(int i=0;i<tableviewproduit.getItems().size();i++){
             FoodProd foodProd1=new FoodProd();
@@ -261,6 +274,29 @@ public class FoodsCon implements Initializable {
         }
         category.setItems(Category);
         listViewproduit.setItems(Produit);
+
+        Imagefood.setCellValueFactory(new PropertyValueFactory<>("image"));
+        namefood.setCellValueFactory(new PropertyValueFactory<>("name"));
+        categoryfood.setCellValueFactory(new PropertyValueFactory<>("description"));
+        Food food=new Food();
+        food.setName("pizza");
+        food.setDescription("pizzas");
+        ImageView imageView1=new ImageView("img/pizza .jpg");
+        imageView1.setFitHeight(80);
+        imageView1.setFitWidth(100);
+        food.setImage(imageView1);
+        Food food2=new Food();
+        food2.setName("soup");
+        food2.setDescription("soups");
+        ImageView imageView2=new ImageView("img/salade.jpg");
+        imageView2.setFitHeight(80);
+        imageView2.setFitWidth(100);
+        food2.setImage(imageView2);
+        listfood.add(food2);
+        listfood.add(food);
+        tableviewfood.setItems(listfood);
+
+
         for(int i=0;i<10;i++){
         Pane pane1=new Pane();
         AnchorPane anchorPane=new AnchorPane();
@@ -288,8 +324,8 @@ public class FoodsCon implements Initializable {
             separator.setPrefHeight(4);
             separator.setPrefHeight(138);
 
-        Text text=new Text();
-        Text text2=new Text();
+        Text text=new Text("tomat");
+        Text text2=new Text("150da");
       //  ImageView imageView1=new ImageView("img/close-480.png");
         Button button=new Button("حذف");
             button.setStyle("-fx-background-color:white;");
@@ -297,6 +333,7 @@ public class FoodsCon implements Initializable {
         Button button1=new Button("تعديل");
             button1.setStyle("-fx-background-color:white;");
         anchorPane2.getChildren().addAll(separator,text,text2,button,button1);
+
         flowpane.getChildren().addAll(pane1);
         }
     }

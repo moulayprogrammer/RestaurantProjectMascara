@@ -105,7 +105,7 @@ public class AddFood implements Initializable {
         food.setIdCategory(IDcategory);
         food.setPrice(Float.parseFloat(prix.getText()));
         food.setDescription(desc.getText());
-        food.setImage(name.getText()+".jpg");
+       // food.setImage(name.getText()+".jpg");
 
         for(int i=0;i<tableviewproduit.getItems().size();i++){
             FoodProd foodProd1=new FoodProd();

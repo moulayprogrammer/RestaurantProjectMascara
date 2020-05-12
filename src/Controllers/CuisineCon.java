@@ -16,7 +16,7 @@ public class CuisineCon {
     }
     public void food() throws IOException {
         Stage primaryStage=new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("../Views/Food.fxml "));
+        Parent root = FXMLLoader.load(getClass().getResource("../Views/Foods.fxml"));
         Scene scene=new Scene(root,1053,628);
         primaryStage.setTitle("إدرة الوجبات ");
         primaryStage.setScene( scene );
